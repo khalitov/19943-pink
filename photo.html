@@ -8,120 +8,125 @@
 
   <body>
     <header class="page-header page-header--menu-opened">
-      <div class="page-header__main-block container">
-        <a href="#" class="logo">
-          <img src="/img.img" alt="Логотип" class="logo__img">
-        </a>
-        <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
+      <div class="page-header__main-block">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="/img.img" alt="Логотип" class="logo__img">
+          </a>
+          <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
+        </div>
       </div>
       <ul class="nav-list">
         <li class="nav-list__menu-item">
-          <a class="nav-list__menu-item-link">Главная</a>
+          <a href="index.html" class="nav-list__menu-item-link">Главная</a>
         </li>
         <li class="nav-list__menu-item">
-          <a class="nav-list__menu-item-link">Фотографии</a>
+          <a href="photo.html" class="nav-list__menu-item-link">Фотографии</a>
         </li>
         <li class="nav-list__menu-item">
-          <a class="nav-list__menu-item-link">Конкурс</a>
+          <a href="form.html" class="nav-list__menu-item-link">Конкурс</a>
         </li>
         <li class="nav-list__menu-item">
-          <a class="nav-list__menu-item-link">HTML academy</a>
+          <a href="https://htmlacademy.ru/" class="nav-list__menu-item-link">HTML academy</a>
         </li>
       </ul>
-      <div class="page-descr">
-        <span class="page-descr__title container">Фотографии
-пользователей</span>
-      </div>
+      <h1 class="page-header__title">
+        Фотографии пользователей
+      </h1>
     </header>
-    <div class="descr-section">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
+    <p class="descr-section">
+      <div class="container">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </div>
+    </p>
     <section class="photo-gallery">
-      <article class="best-photo-today">
-        <img src="img/img.jpg" alt="" class="panorama panorama--best-today">
-        <div class="user-text container">
-          <b class="user-text__user-name">Анна </b>
-          <span class="user-text__date">(5 минут назад)</span>
-          <p class="user-text__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-          <div class="block-with-likes">
-            <button class="block-with-likes__like-btn"></button>
-            <span class="block-with-likes__like-text">Нравится:</span>
-            <span class="block-with-likes__like-value">215</span>
-          </div>
-        </div>
-      </article>
-      <div class="user-posts-block container">
-        <article class="user-post container">
-          <img src="img/img.jpg" alt="" class="user-img">
-          <div class="user-text">
-            <b class="user-text__user-name">Левон </b>
-            <span class="user-text__date">(5 часов назад)</span>
-            <p class="user-text__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="block-with-likes">
-              <button class="block-with-likes__like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">356</span>
-            </div>
-          </div>
-        </article>
-        <article class="user-post container">
-          <img src="img/img.jpg" alt="" class="user-img">
-          <div class="user-text">
-            <b class="user-text__user-name">Антон</b>
-            <span class="user-text__date">(12 часов назад)</span>
-            <p class="user-text__content">Соседи будут рады!</p>
-            <div class="block-with-likes">
-              <button class="block-with-likes__like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">666</span>
-            </div>
-          </div>
-        </article>
+      <img src="img/img.jpg" alt="" class="user-post__img user-post_img--best-today">
+      <div class="container">
         <article class="user-post">
-          <img src="img/img.jpg" alt="" class="user-img">
-          <div class="user-text">
-            <b class="user-text__user-name">Борис</b>
-            <span class="user-text__date">(20 часов назад)</span>
-            <p class="user-text__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="user-post__user-text">
+            <b class="user-post__user-name">Анна </b>
+            <span class="user-post__date">(5 минут назад)</span>
+            <p class="user-post__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
             <div class="block-with-likes">
-              <button class="block-with-likes__like-btn"></button>
+              <button class="like-btn"></button>
               <span class="block-with-likes__like-text">Нравится:</span>
               <span class="block-with-likes__like-value">215</span>
             </div>
           </div>
         </article>
         <article class="user-post">
-          <img src="img/img.jpg" alt="" class="user-img">
-          <div class="user-text">
-            <b class="user-text__user-name">Сергей</b>
-            <span class="user-text__date">(25 часов назад)</span>
-            <p class="user-text__content">Самая кубанская в мире!</p>
+          <img src="img/img.jpg" alt="" class="user-post__img">
+          <div class="user-post__user-text">
+            <b class="user-post__user-name">Левон </b>
+            <span class="user-post__date">(5 часов назад)</span>
+            <p class="user-post__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="block-with-likes">
-              <button class="block-with-likes__like-btn"></button>
+              <button class="like-btn"></button>
+              <span class="block-with-likes__like-text">Нравится:</span>
+              <span class="block-with-likes__like-value">356</span>
+            </div>
+          </div>
+        </article>
+        <article class="user-post">
+          <img src="img/img.jpg" alt="" class="user-post__img">
+          <div class="user-post__user-text">
+            <b class="user-post__user-name">Антон</b>
+            <span class="user-post__date">(12 часов назад)</span>
+            <p class="user-post__content">Соседи будут рады!</p>
+            <div class="block-with-likes">
+              <button class="like-btn"></button>
+              <span class="block-with-likes__like-text">Нравится:</span>
+              <span class="block-with-likes__like-value">666</span>
+            </div>
+          </div>
+        </article>
+        <article class="user-post">
+          <img src="img/img.jpg" alt="" class="user-post__img">
+          <div class="user-post__user-text">
+            <b class="user-post__user-name">Борис</b>
+            <span class="user-post__date">(20 часов назад)</span>
+            <p class="user-post__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="block-with-likes">
+              <button class="like-btn"></button>
+              <span class="block-with-likes__like-text">Нравится:</span>
+              <span class="block-with-likes__like-value">215</span>
+            </div>
+          </div>
+        </article>
+        <article class="user-post">
+          <img src="img/img.jpg" alt="" class="user-post__img">
+          <div class="user-post__user-text">
+            <b class="user-post__user-name">Сергей</b>
+            <span class="user-post__date">(25 часов назад)</span>
+            <p class="user-post__content">Самая кубанская в мире!</p>
+            <div class="block-with-likes">
+              <button class="like-btn"></button>
               <span class="block-with-likes__like-text">Нравится:</span>
               <span class="block-with-likes__like-value">4</span>
             </div>
           </div>
         </article>
         <article class="user-post">
-          <img src="img/img.jpg" alt="" class="user-img">
-          <div class="user-text">
-            <b class="user-text__user-name">Максим</b>
-            <span class="user-text__date">(40 часов назад)</span>
-            <p class="user-text__content">Где снег-то?</p>
+          <img src="img/img.jpg" alt="" class="user-post__img">
+          <div class="user-post__user-text">
+            <b class="user-post__user-name">Максим</b>
+            <span class="user-post__date">(40 часов назад)</span>
+            <p class="user-post__content">Где снег-то?</p>
             <div class="block-with-likes">
-              <button class="block-with-likes__like-btn"></button>
+              <button class="like-btn"></button>
               <span class="block-with-likes__like-text">Нравится:</span>
               <span class="block-with-likes__like-value">150</span>
             </div>
           </div>
         </article>
         <article class="user-post">
-          <img src="img/img.jpg" alt="" class="user-img">
-          <div class="user-text">
-            <b class="user-text__user-name">Надежда</b>
-            <span class="user-text__date">(45 часов назад)</span>
-            <p class="user-text__content">Всем GM и взаимные лайки!</p>
+          <img src="img/img.jpg" alt="" class="user-post__img">
+          <div class="user-post__user-text">
+            <b class="user-post__user-name">Надежда</b>
+            <span class="user-post__date">(45 часов назад)</span>
+            <p class="user-post__content">Всем GM и взаимные лайки!</p>
             <div class="block-with-likes">
-              <button class="block-with-likes__like-btn"></button>
+              <button class="like-btn"></button>
               <span class="block-with-likes__like-text">Нравится:</span>
               <span class="block-with-likes__like-value">2560</span>
             </div>
@@ -130,30 +135,40 @@
         <p class="descr-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </section>
-    <form action="" class="photo-upload-block container">
-      <div class="photo-edit-block">
-        <img src="img/img.jpg" alt="" class="uploaded-pic">
-        <div class="edit-tools-block">
-          <button class="edit-tool edit-tool--crop edit-tool--active"></button>
-          <button class="edit-tool edit-tool--fill"></button>
-          <button class="edit-tool edit-tool--contrast"></button>
-          <div class="edit-instrument edit-instrument--crop">
-            <i class=" crop-line"></i>
-            <i class="crop-line-slider "></i>
+    <form action="" class="photo-upload-block">
+      <div class="container">
+        <div class="photo-edit-block">
+          <img src="img/img.jpg" alt="" class="uploaded-pic">
+          <div class="edit-tools-block">
+            <button class="edit-tool edit-tool--crop edit-tool--active"></button>
+            <button class="edit-tool edit-tool--fill"></button>
+            <button class="edit-tool edit-tool--contrast"></button>
+            <div class="edit-instrument edit-instrument--crop">
+              <i class=" crop-line"></i>
+              <i class="crop-line-slider "></i>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="submit-block">
-        <button type="submit" class="submit-btn">Запостить</button>
-        <button class="cancel-btn">Отмена</button>
+        <div class="submit-block">
+          <button type="submit" class="btn btn--red">Запостить</button>
+          <button type="reset" class="btn brn--transparent">Отмена</button>
+        </div>
       </div>
     </form>
-    <footer class="page-footer container">
-      <a href="#" class="logo logo--with-glasses">
-        <img src="/img.img" alt="Логотип" class="logo__img">
-      </a>
-      <div class="socal-btn-block"><i class="social-btn social-btn--tw"></i></div>
-      <div class="created">Разработано</div>
+    <footer class="page-footer">
+      <div class="container">
+        <a href="#" class="logo logo--with-glasses">
+          <img src="/img.img" alt="Логотип" class="logo__img">
+        </a>
+        <div class="socal-btn-block">
+          <a href="#" class="social-btn social-btn--tw"></a>
+          <a href="#" class="social-btn social-btn--fb"></a>
+          <a href="#" class="social-btn social-btn--youtube"></a>
+        </div>
+        <div class="created">
+          <a href="" class="created__link">Разработано</a>
+        </div>
+      </div>
     </footer>
   </body>
 
