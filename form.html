@@ -8,18 +8,109 @@
 
   <body>
     <header class="page-header page-header--menu-opened">
-      <a href="#" class="logo">
+      <div class="page-header__main-block container">
+        <a href="#" class="logo">
+          <img src="/img.img" alt="Логотип" class="logo__img">
+        </a>
+        <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-list__menu-item">
+          <a class="nav-list__menu-item-link">Главная</a>
+        </li>
+        <li class="nav-list__menu-item">
+          <a class="nav-list__menu-item-link">Фотографии</a>
+        </li>
+        <li class="nav-list__menu-item">
+          <a class="nav-list__menu-item-link">Конкурс</a>
+        </li>
+        <li class="nav-list__menu-item">
+          <a class="nav-list__menu-item-link">HTML academy</a>
+        </li>
+      </ul>
+      <div class="page-descr">
+        <span class="page-descr__title container">Конкурс на самое безбашеное путешествие с Пинк</span>
+      </div>
+    </header>
+    <div class="descr-section">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </div>
+    <form action="" class="form-section">
+      <div class="username-input-block container">
+        <label for="first-name" class="username-input-block__name-label">Имя</label>
+        <input id="first-name" type="text" class="username-input-block__name" placeholder="Введите ваше имя">
+        <label for="last-name" class="username-input-block__name-label">Фамилия</label>
+        <input id="last-name" type="text" class="username-input-block__name" placeholder="Укажите фамилию">
+        <label for="father-name" class="username-input-block__name-label">Отчество</label>
+        <input id="father-name" type="text" class="username-input-block__name" placeholder="Ну и отчество тоже">
+      </div>
+      <div class="achievement-list container">
+        <p class="descrp-block">Ваши безбашенные достижения в путешествии</p>
+        <ul class="achievement-list">
+          <li class="achievement-list__achieve-item">
+            <input id="shark-selfi" name="shark-selfi" type="checkbox" class="achievement-list__achieve-checkbox" checked>
+            <label for="shark-selfi" class="achievement-list__achieve-label">Сделал селфи с акулой</label>
+          </li>
+          <li class="achievement-list__achieve-item">
+            <input id="tan" name="tan" type="checkbox" class="achievement-list__achieve-checkbox" checked>
+            <label for="tan" class="achievement-list__achieve-label">Обгорел на пляже</label>
+          </li>
+          <li class="achievement-list__achieve-item">
+            <input id="chuck-norris" name="chuck-norris" type="checkbox" class="achievement-list__achieve-checkbox">
+            <label for="chuck-norris" class="achievement-list__achieve-label">Видел Чака Норриса</label>
+          </li>
+          <li class="achievement-list__achieve-item">
+            <input id="presents" name="presents" type="checkbox" class="achievement-list__achieve-checkbox">
+            <label for="presents" class="achievement-list__achieve-label">Накупил сувениров</label>
+          </li>
+          <li class="achievement-list__achieve-item">
+            <input id="tower-holder" name="tower-holder" type="checkbox" class="achievement-list__achieve-checkbox" checked>
+            <label for="tower-holder" class="achievement-list__achieve-label">Удержал башню</label>
+          </li>
+          <li class="achievement-list__achieve-item">
+            <input id="hotel-destr" name="hotel-destr" type="checkbox" class="achievement-list__achieve-checkbox">
+            <label for="hotel-destr" class="achievement-list__achieve-label">Разгромил отель</label>
+          </li>
+        </ul>
+      </div>
+      <div class="user-contacts-input-block container">
+        <label for="user-phone" class="user-contacts-input-block__phone-label">Номер телефончика</label>
+        <input id="user-phone" type="text" class="user-contacts-input-block__phone" placeholder="Номер, пожалуйста">
+        <label for="user-email" class="user-contacts-input-block__email-label">Адресок почты</label>
+        <input id="user-email" type="text" class="user-contacts-input-block__email" placeholder="E-mail, пожалуйста">
+      </div>
+      <div class="os-select-block container">
+        <p class="descr-block">С каким приложением путешествовали?
+        </p>
+        <ul class="os-select-list">
+          <li class="os-select-list__os-select-item">
+            <input type="radio" name="user-os_label" value="iOS" id="user-iOS" checked>
+            <label for="user-iOS" class="os-select-list__os-select-label">Pink для iOS</label>
+          </li>
+          <li class="os-select-list__os-select-item">
+            <input type="radio" name="user-os_label" value="android" id="user-android">
+            <label for="user-android" class="os-select-list__os-select-label">Pink на Android</label>
+          </li>
+          <li class="os-select-list__os-select-item">
+            <input type="radio" name="user-os_label" value="win" id="user-win">
+            <label for="user-win" class="os-select-list__os-select-label">Windows Phone</label>
+          </li>
+        </ul>
+      </div>
+      <div class="user-emotions-block container">
+        <p class="descr-block">Опишите свои эмоции</p>
+        <textarea name="user-emotions" id="user-emotions" cols="30" rows="10" class="user-emotions-block__user-emotion-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </div>
+      <div class="submit-block container">
+        <button type="submit" class="submit-btn">Отправить форму</button>
+        <p class="require-text"><sup>*</sup> — обязательные поля</p>
+      </div>
+    </form>
+    <footer class="page-footer container">
+      <a href="#" class="logo logo--with-glasses">
         <img src="/img.img" alt="Логотип" class="logo__img">
       </a>
-      <div class="page-header__toggle page-header__close-btn"></div>
-      <ul class="page-header__menu">
-        <li class="page-header_menu-item"><a class="page-header__menu-item-link">Информация</a></li>
-        <li class="page-header_menu-item"><a class="page-header__menu-item-link">Возможности</a></li>
-        <li class="page-header_menu-item"><a class="page-header__menu-item-link">Отзывы</a></li>
-        <li class="page-header_menu-item"><a class="page-header__menu-item-link">Стоимость</a></li>
-      </ul>
-    </header>
-
+      <div class="socal-btn-block"><i class="social-btn social-btn--tw"></i></div>
+      <div class="created"></div>
+    </footer>
   </body>
 
 </html>
