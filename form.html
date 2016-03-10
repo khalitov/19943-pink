@@ -34,14 +34,12 @@
         Конкурс на самое безбашеное путешествие с Пинк
       </h1>
     </header>
-    <p class="descr-section">
-      <div class="container">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      </div>
-    </p>
     <form action="" class="form-section">
       <div class="form-section__block">
         <div class="container">
+          <p class="form-section__descr">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </p>
           <label for="first-name" class="form-section__label form-section__label--red-big">Имя</label>
           <input id="first-name" type="text" class="form-section__text-input" placeholder="Введите ваше имя">
           <label for="last-name" class="form-section__label form-section__label--red-big">Фамилия</label>
@@ -84,9 +82,9 @@
       <div class="form-section__block">
         <div class="container">
           <label for="user-phone" class="form-section__label form-section__label--red-big">Номер телефончика</label>
-          <input id="user-phone" type="text" class="form-section__text-input" placeholder="Номер, пожалуйста">
+          <input id="user-phone" type="tel" class="form-section__text-input" pattern="[0-9]{11}" placeholder="Номер, пожалуйста">
           <label for="user-email" class="form-section__label form-section__label--red-big">Адресок почты</label>
-          <input id="user-email" type="text" class="form-section__text-input" placeholder="E-mail, пожалуйста">
+          <input id="user-email" type="email" class="form-section__text-input" placeholder="E-mail, пожалуйста">
         </div>
       </div>
       <div class="form-section__block form-section__block--gray">
