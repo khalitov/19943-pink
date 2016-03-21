@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -11,7 +13,7 @@
       <div class="page-header__main-block">
         <div class="container">
           <a href="index.html" class="logo">
-            <img src="/img.img" alt="Логотип" class="logo__img">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="logo__img">
           </a>
           <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
         </div>
@@ -32,151 +34,139 @@
       </ul>
       <h1 class="page-header__title">
         Фотографии пользователей
+        <br>
       </h1>
     </header>
     <div class="descr-section">
       <div class="container">
-        <p class="descr-section__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="descr-section__text">Взгляните на фотографии, которые выкладывают пользователи!
+          <br> Видите, как не хватает ваших?</p>
       </div>
     </div>
     <section class="photo-gallery">
       <article class="user-post">
-        <img src="img/img.jpg" alt="" class="user-post__img user-post_img--best-today">
-        <div class="container">
-          <div class="user-post__user-text">
-            <b class="user-post__user-name">Анна </b>
-            <span class="user-post__date">(5 минут назад)</span>
-            <p class="user-post__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <div class="block-with-likes">
-              <button class="like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">215</span>
-            </div>
+        <div class="user-post__best-img-wrapper">
+          <img src="img/panorama-mobile.jpg" alt="" class="user-post__img user-post_img--best-today">
+        </div>
+        <div class="user-post__user-text">
+          <b class="user-post__user-name">Анна </b>
+          <span class="user-post__date">(5 минут назад)</span>
+          <p class="user-post__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+          <div class="block-with-likes">
+            <button class="like-btn"></button>
+            <span class="block-with-likes__like-text">Нравится:</span>
+            <span class="block-with-likes__like-value">215</span>
           </div>
         </div>
       </article>
       <article class="user-post">
-        <div class="container">
-          <img src="img/img.jpg" alt="" class="user-post__img">
-          <div class="user-post__user-text">
-            <b class="user-post__user-name">Левон </b>
-            <span class="user-post__date">(5 часов назад)</span>
-            <p class="user-post__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="block-with-likes">
-              <button class="like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">356</span>
-            </div>
+        <img src="img/photo-1-mobile.jpg" alt="" class="user-post__img">
+        <div class="user-post__user-text">
+          <b class="user-post__user-name">Левон </b>
+          <span class="user-post__date">(5 часов назад)</span>
+          <p class="user-post__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="block-with-likes">
+            <button class="like-btn"></button>
+            <span class="block-with-likes__like-text">Нравится:</span>
+            <span class="block-with-likes__like-value">356</span>
           </div>
         </div>
       </article>
       <article class="user-post">
-        <div class="container">
-          <img src="img/img.jpg" alt="" class="user-post__img">
-          <div class="user-post__user-text">
-            <b class="user-post__user-name">Антон</b>
-            <span class="user-post__date">(12 часов назад)</span>
-            <p class="user-post__content">Соседи будут рады!</p>
-            <div class="block-with-likes">
-              <button class="like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">666</span>
-            </div>
+        <img src="img/img.jpg" alt="" class="user-post__img">
+        <div class="user-post__user-text">
+          <b class="user-post__user-name">Антон</b>
+          <span class="user-post__date">(12 часов назад)</span>
+          <p class="user-post__content">Соседи будут рады!</p>
+          <div class="block-with-likes">
+            <button class="like-btn"></button>
+            <span class="block-with-likes__like-text">Нравится:</span>
+            <span class="block-with-likes__like-value">666</span>
           </div>
         </div>
       </article>
       <article class="user-post">
-        <div class="container">
-          <img src="img/img.jpg" alt="" class="user-post__img">
-          <div class="user-post__user-text">
-            <b class="user-post__user-name">Борис</b>
-            <span class="user-post__date">(20 часов назад)</span>
-            <p class="user-post__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="block-with-likes">
-              <button class="like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">215</span>
-            </div>
+        <img src="img/img.jpg" alt="" class="user-post__img">
+        <div class="user-post__user-text">
+          <b class="user-post__user-name">Борис</b>
+          <span class="user-post__date">(20 часов назад)</span>
+          <p class="user-post__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="block-with-likes">
+            <button class="like-btn"></button>
+            <span class="block-with-likes__like-text">Нравится:</span>
+            <span class="block-with-likes__like-value">215</span>
           </div>
         </div>
       </article>
       <article class="user-post">
-        <div class="container">
-          <img src="img/img.jpg" alt="" class="user-post__img">
-          <div class="user-post__user-text">
-            <b class="user-post__user-name">Сергей</b>
-            <span class="user-post__date">(25 часов назад)</span>
-            <p class="user-post__content">Самая кубанская в мире!</p>
-            <div class="block-with-likes">
-              <button class="like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">4</span>
-            </div>
+        <img src="img/img.jpg" alt="" class="user-post__img">
+        <div class="user-post__user-text">
+          <b class="user-post__user-name">Сергей</b>
+          <span class="user-post__date">(25 часов назад)</span>
+          <p class="user-post__content">Самая кубанская в мире!</p>
+          <div class="block-with-likes">
+            <button class="like-btn"></button>
+            <span class="block-with-likes__like-text">Нравится:</span>
+            <span class="block-with-likes__like-value">4</span>
           </div>
         </div>
       </article>
       <article class="user-post">
-        <div class="container">
-          <img src="img/img.jpg" alt="" class="user-post__img">
-          <div class="user-post__user-text">
-            <b class="user-post__user-name">Максим</b>
-            <span class="user-post__date">(40 часов назад)</span>
-            <p class="user-post__content">Где снег-то?</p>
-            <div class="block-with-likes">
-              <button class="like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">150</span>
-            </div>
+        <img src="img/img.jpg" alt="" class="user-post__img">
+        <div class="user-post__user-text">
+          <b class="user-post__user-name">Максим</b>
+          <span class="user-post__date">(40 часов назад)</span>
+          <p class="user-post__content">Где снег-то?</p>
+          <div class="block-with-likes">
+            <button class="like-btn"></button>
+            <span class="block-with-likes__like-text">Нравится:</span>
+            <span class="block-with-likes__like-value">150</span>
           </div>
         </div>
       </article>
       <article class="user-post">
-        <div class="container">
-          <img src="img/img.jpg" alt="" class="user-post__img">
-          <div class="user-post__user-text">
-            <b class="user-post__user-name">Надежда</b>
-            <span class="user-post__date">(45 часов назад)</span>
-            <p class="user-post__content">Всем GM и взаимные лайки!</p>
-            <div class="block-with-likes">
-              <button class="like-btn"></button>
-              <span class="block-with-likes__like-text">Нравится:</span>
-              <span class="block-with-likes__like-value">2560</span>
-            </div>
+        <img src="img/img.jpg" alt="" class="user-post__img">
+        <div class="user-post__user-text">
+          <b class="user-post__user-name">Надежда</b>
+          <span class="user-post__date">(45 часов назад)</span>
+          <p class="user-post__content">Всем GM и взаимные лайки!</p>
+          <div class="block-with-likes">
+            <button class="like-btn"></button>
+            <span class="block-with-likes__like-text">Нравится:</span>
+            <span class="block-with-likes__like-value">2560</span>
           </div>
         </div>
       </article>
       <div class="descr-section">
         <div class="container">
           <p class="descr-section__text">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+            Затмите их всех!
+            <br> Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
       </div>
     </section>
     <form action="" class="photo-upload-block">
-      <div class="container">
-        <div class="photo-edit-block">
-          <img src="img/img.jpg" alt="" class="uploaded-pic">
-          <div class="edit-tools-block">
-            <button class="edit-tool edit-tool--crop edit-tool--active"></button>
-            <button class="edit-tool edit-tool--fill"></button>
-            <button class="edit-tool edit-tool--contrast"></button>
-            <div class="edit-instrument edit-instrument--crop">
-              <i class=" crop-line"></i>
-              <i class="crop-line-slider "></i>
-            </div>
+      <div class="photo-edit-block">
+        <img src="../img/photo-7-mobile.jpg" alt="" class="photo-upload-block__uploaded-pic">
+        <div class="edit-tools-block">
+          <button class="edit-tool edit-tool--crop edit-tool--active"></button>
+          <button class="edit-tool edit-tool--fill"></button>
+          <button class="edit-tool edit-tool--contrast"></button>
+          <div class="edit-instrument edit-instrument--crop">
+            <i class="crop-line"><i class="crop-line__slider "></i></i>
           </div>
         </div>
-        <div class="submit-block">
-          <button type="submit" class="btn btn--red">Запостить</button>
-          <button type="reset" class="btn brn--transparent">Отмена</button>
-        </div>
+      </div>
+      <div class="submit-block">
+        <button type="submit" class="btn btn--red">Запостить</button>
+        <button type="reset" class="btn btn--transparent">Отмена</button>
       </div>
     </form>
     <footer class="page-footer">
       <div class="container">
         <a href="#" class="logo logo--with-glasses">
-          <img src="/img.img" alt="Логотип" class="logo__img">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" class="logo__img">
         </a>
         <div class="socal-btn-block">
           <a href="#" class="social-btn social-btn--tw"></a>

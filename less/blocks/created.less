@@ -1,0 +1,19 @@
+.created {
+  text-align: center;
+  &__link {
+    position: relative;
+    padding-right: 50px;
+    .gray-font;
+    text-decoration: none;
+    &::after {
+      content: "";
+      top: -5px;
+      right: 0;
+      position: absolute;
+      display: inline-block;
+      width: 30px;
+      height: 35px;
+      background: red;
+    }
+  }
+}

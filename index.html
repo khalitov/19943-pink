@@ -4,15 +4,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     <header class="page-header page-header--menu-opened">
-      <div class="page-header__main-block">
+      <div class="page-header__main-block clearfix">
         <div class="container">
-          <div class="logo">
-            <img src="/img.img" alt="Логотип" class="logo__img">
-          </div>
+          <a class="logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="logo__img">
+          </a>
           <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
         </div>
       </div>
@@ -30,21 +32,24 @@
           <a href="https://htmlacademy.ru/" class="nav-list__menu-item-link">HTML academy</a>
         </li>
       </ul>
-      <h1 class="page-header__title page-header__title--phone-pic">
-        Взгляните на жизнь иначе!
-      </h1>
-    </header>
-    <div class="download-block">
-      <div class="container">
-        <a href="" class="btn">Скачать приложение</a>
-        <div class="download-block__os-choose-block">
-          <a href="#" class="os-btn os-btn--apple"></a>
-          <a href="#" class="os-btn os-btn--android"></a>
-          <a href="#" class="os-btn os-btn--win"></a>
-        </div>
-        <div class="download-block__available-os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+      <div class="overflow-wrapper">
+        <h1 class="page-header__title page-header__title--with-phone">
+          Взгляните на жизнь
+          <br>иначе!
+        </h1>
       </div>
-    </div>
+      <div class="download-block">
+        <div class="container">
+          <a href="" class="btn">Скачать приложение</a>
+          <div class="download-block__os-choose-block">
+            <a href="#" class="os-btn os-btn--apple"></a>
+            <a href="#" class="os-btn os-btn--android"></a>
+            <a href="#" class="os-btn os-btn--win"></a>
+          </div>
+          <div class="download-block__available-os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+        </div>
+      </div>
+    </header>
     <div class="promo">
       <div class="container">
         <div class="promo__title">Устали от серости мегаполиса?</div>
@@ -95,54 +100,64 @@
       </div>
     </div>
     <div class="price-section">
-      <div class="container">
-        <div class="price-section__price-block price-section__price-block--hit-marker">
-          <div class="price-section_price-name">
-            <b class="price-section__title">Стандарт</b>
+      <table class="price-section__options-table">
+        <tr class="price-section__title-table-row">
+          <th class="price-section__title-table-cell"></th>
+          <th class="price-section__title-table-cell">
+            <b class="price-section__price-title">База</b>
+            <span class="price-section__price-value">1,99 USD</span>
+          </th>
+          <th class="price-section__title-table-cell price-section__title-table-cell--hit">
+            <b class="price-section__price-title">Стандарт</b>
             <span class="price-section__price-value">3,99 USD</span>
-          </div>
-          <table class="price-section__options-table">
-            <tr class="price-section__options-table-row">
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title"></b>
-                <i class="price-section__option-present price-section__option-present--no"></i></td>
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title">Розовый фильтр</b>
-                <i class="price-section__option-present price-section__option-present--yes"></i></td>
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title"></b>
-                <i class="price-section__option-present price-section__option-present--no"></i></td>
-            </tr>
-            <tr class="price-section__options-table-row">
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title"></b>
-                <i class="price-section__option-present price-section__option-present--no"></i></td>
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title">Смайлики</b>
-                <i class="price-section__option-present price-section__option-present--yes"></i></td>
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title"></b>
-                <i class="price-section__option-present price-section__option-present--no"></i></td>
-            </tr>
-            <tr class="price-section__options-table-row">
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title"></b>
-                <i class="price-section__option-present price-section__option-present--no"></i></td>
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title">Комментарии</b>
-                <i class="price-section__option-present price-section__option-present--no"></i></td>
-              <td class="price-section__options-table-cell">
-                <b class="price-section__option-title"></b>
-                <i class="price-section__option-present price-section__option-present--no"></i></td>
-            </tr>
-          </table>
-        </div>
-        <ul class="slider-toggle">
-          <li class="slider-toggle__toggle-item"></li>
-          <li class="slider-toggle__toggle-item slider-toggle__toggle-item--active"></li>
-          <li class="slider-toggle__toggle-item"></li>
-        </ul>
-      </div>
+          </th>
+          <th class="price-section__title-table-cell">
+            <b class="price-section__price-title">Анлим</b>
+            <span class="price-section__price-value">9,99 USD</span>
+          </th>
+        </tr>
+        <tr class="price-section__options-table-row">
+          <td class="price-section__options-table-cell price-section__options-table-cell--name">Розовый фильтр</td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Розовый фильтр</b>
+            <i class="price-section__option-present price-section__option-present--no"></i></td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Розовый фильтр</b>
+            <i class="price-section__option-present price-section__option-present--yes"></i></td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Розовый фильтр</b>
+            <i class="price-section__option-present price-section__option-present--no"></i></td>
+        </tr>
+        <tr class="price-section__options-table-row">
+          <td class="price-section__options-table-cell price-section__options-table-cell--name">Смайлики</td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Смайлики</b>
+            <i class="price-section__option-present price-section__option-present--no"></i></td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Смайлики</b>
+            <i class="price-section__option-present price-section__option-present--yes"></i></td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Смайлики</b>
+            <i class="price-section__option-present price-section__option-present--no"></i></td>
+        </tr>
+        <tr class="price-section__options-table-row">
+          <td class="price-section__options-table-cell price-section__options-table-cell--name">Комментарии</td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Комментарии</b>
+            <i class="price-section__option-present price-section__option-present--no"></i></td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Комментарии</b>
+            <i class="price-section__option-present price-section__option-present--no"></i></td>
+          <td class="price-section__options-table-cell">
+            <b class="price-section__option-title">Комментарии</b>
+            <i class="price-section__option-present price-section__option-present--no"></i></td>
+        </tr>
+      </table>
+      <ul class="slider-toggle">
+        <li class="slider-toggle__toggle-item"></li>
+        <li class="slider-toggle__toggle-item slider-toggle__toggle-item--active"></li>
+        <li class="slider-toggle__toggle-item"></li>
+      </ul>
     </div>
     <footer class="index-page-footer">
       <div class="container">

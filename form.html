@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -11,7 +13,7 @@
       <div class="page-header__main-block">
         <div class="container">
           <a href="index.html" class="logo">
-            <img src="/img.img" alt="Логотип" class="logo__img">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="logo__img">
           </a>
           <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
         </div>
@@ -34,22 +36,21 @@
         Конкурс на самое безбашеное путешествие с Пинк
       </h1>
     </header>
+    <div class="descr-section">
+      <div class="container">
+        <p class="descr-section__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      </div>
+    </div>
     <form action="" class="form-section">
       <div class="form-section__block">
-        <div class="container">
-          <p class="form-section__descr">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          </p>
-          <label for="first-name" class="form-section__label form-section__label--red-big">Имя</label>
-          <input id="first-name" type="text" class="form-section__text-input" placeholder="Введите ваше имя">
-          <label for="last-name" class="form-section__label form-section__label--red-big">Фамилия</label>
-          <input id="last-name" type="text" class="form-section__text-input" placeholder="Укажите фамилию">
-          <label for="father-name" class="form-section__label form-section__label--red-big">Отчество</label>
-          <input id="father-name" type="text" class="form-section__text-input" placeholder="Ну и отчество тоже">
-        </div>
+        <label for="first-name" class="form-section__label form-section__label--red-big">Имя:</label>
+        <input id="first-name" type="text" class="form-section__text-input" placeholder="Введите ваше имя">
+        <label for="last-name" class="form-section__label form-section__label--red-big">Фамилия:</label>
+        <input id="last-name" type="text" class="form-section__text-input" placeholder="Укажите фамилию">
+        <label for="father-name" class="form-section__label form-section__label--red-big">Отчество:</label>
+        <input id="father-name" type="text" class="form-section__text-input" placeholder="Ну и отчество тоже">
       </div>
       <div class="form-section__block form-section__block--gray">
-        <div class="container">
           <p class="form-section__block-descr">Ваши безбашенные достижения в путешествии</p>
           <ul class="form-section__input-list">
             <li class="form-section__input-list-item">
@@ -77,18 +78,14 @@
               <label for="hotel-destr" class="form-section__label">Разгромил отель</label>
             </li>
           </ul>
-        </div>
       </div>
       <div class="form-section__block">
-        <div class="container">
           <label for="user-phone" class="form-section__label form-section__label--red-big">Номер телефончика</label>
           <input id="user-phone" type="tel" class="form-section__text-input" pattern="[0-9]{11}" placeholder="Номер, пожалуйста">
           <label for="user-email" class="form-section__label form-section__label--red-big">Адресок почты</label>
           <input id="user-email" type="email" class="form-section__text-input" placeholder="E-mail, пожалуйста">
-        </div>
       </div>
       <div class="form-section__block form-section__block--gray">
-        <div class="container">
           <p class="form-section__block-descr">
             С каким приложением путешествовали?
           </p>
@@ -106,25 +103,20 @@
               <label for="user-win" class="form-section__label">Windows Phone</label>
             </li>
           </ul>
-        </div>
       </div>
       <div class="form-section__block">
-        <div class="container">
           <p class="form-section__block-descr">Опишите свои эмоции</p>
           <textarea name="user-emotions" id="user-emotions" cols="30" rows="10" class="form-section__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
       </div>
       <div class="form-section__row-wrapper">
-        <div class="container">
           <button type="submit" class="submit-btn">Отправить форму</button>
           <p class="form-section__required-text"><sup>*</sup> — обязательные поля</p>
-        </div>
       </div>
     </form>
     <footer class="page-footer">
       <div class="container">
         <a href="#" class="logo logo--with-glasses">
-          <img src="/img.img" alt="Логотип" class="logo__img">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" class="logo__img">
         </a>
         <div class="socal-btn-block">
           <a href="#" class="social-btn social-btn--tw"></a>

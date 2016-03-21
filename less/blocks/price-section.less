@@ -1,0 +1,89 @@
+.price-section {
+  .index-gray-block;
+  padding-top: 65px;
+  padding-bottom: 45px;
+  text-align: center;
+  overflow: hidden;
+  &__options-table {
+    margin-left: -535px;
+    margin-bottom: 30px;
+  }
+  &__title-table-cell {
+    border-radius: 2px;
+  }
+  &__title-table-cell {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 276px;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+    .white-font;
+    background-color: @menu-bg-color;
+  }
+  &__price-title {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: lighter;
+  }
+  &__title-table-cell:first-of-type {
+    border-right: none;
+  }
+  &__title-table-cell:nth-of-type(2) {
+    border-left: none;
+  }
+  &__title-table-cell:last-of-type {
+    border-right: none;
+  }
+  &__title-table-cell--hit {
+    position: relative;
+  }
+  &__title-table-cell--hit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-left: -2px;
+    background: url("../img/bg-hit.svg") no-repeat;
+  }
+  &__options-table-cell {
+    min-width: 237px;
+    padding: 15px 22px;
+    padding-right: 17px;
+    border-radius: 2px;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    text-align: left;
+    background-color: white;
+  }
+  &__options-table-cell:first-of-type {
+    // visibility: hidden;
+    border-top: 2px solid #e5e5e5;
+  }
+  &__option-title {
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+  }
+  &__option-present {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    background: url("../img/icon-yes.svg") right 50% no-repeat;
+  }
+  &__title-table-cell:first-of-type {
+    visibility: hidden;
+  }
+}
