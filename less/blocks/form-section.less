@@ -13,17 +13,42 @@
     &--gray {
       background-color: #f2f2f2;
     }
+    &:not(:first-of-type) {
+      padding-top: 35px;
+    }
+    &:last-of-type {
+      padding-top: 0;
+      align-self: center;
+      text-align: center;
+    }
   }
   &__block-descr {
-    align-self: center;
+    padding: 0 20px;
+    margin: 5px 0 40px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #d22856;
     text-align: center;
+    text-transform: uppercase;
+  }
+  &__input-list-item {
+    margin-bottom: 50px;
+  }
+  &__checkbox,
+  &__radio {
+    display: none;
   }
   &__text-input {
-    width: 90%;
+    width: 87.5%;
     padding: 20px;
     margin-bottom: 20px;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
+    font-size: 18px;
+    line-height: 30px;
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
   }
   &__input-list {
     list-style: none;
@@ -31,6 +56,8 @@
     padding: 0;
   }
   &__label {
+    position: relative;
+    padding-left: 70px;
     .gray-font;
     font-size: 18px;
     line-height: 30px;
@@ -40,6 +67,56 @@
       font-size: 14px;
       color: #d22856;
       text-transform: uppercase;
+    }
+    input[type="checkbox"] + &::before {
+      position: absolute;
+      left: 0;
+      top: -5px;
+      content: "";
+      width: 35px;
+      height: 35px;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+      background-color: white;
+    }
+    input[type="checkbox"]:checked + &::before {
+      background: white url("../img/icon-yes.svg") 50% 50% no-repeat;
+    }
+    input[type="radio"] + &::before {
+      position: absolute;
+      left: 0;
+      top: -5px;
+      content: "";
+      width: 15px;
+      height: 15px;
+      border: 10px solid white;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 0 0 2px #e5e5e5;
+    }
+    input[type="radio"]:checked + &::before {
+      background: #d22856;
+    }
+  }
+  &__textarea {
+    width: 87.5%;
+    padding: 20px;
+    margin-bottom: 45px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__block-descr + &__textarea {
+    margin-top: -20px;
+  }
+  &__required-text {
+    .gray-font;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    & sup {
+      color: #d22856;
     }
   }
 }
