@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src:
+      local("Open Sans"),
+      local("Open Sans Regular"),
+      url("../fonts/opensans.woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src:
+      local("OpenSans Bold"),
+      local("Open Sans Bold"),
+      url("../fonts/opensansbold.woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-style: normal;
+  src:
+      local("OpenSans Light"),
+      local("Open Sans Light"),
+      url("../fonts/opensanslight.woff");
+}
+.main-font() {
+  color: black;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.white-font() {
+  .main-font;
+  color: white;
+}
+.gray-font() {
+  .main-font;
+  color: @gray-text-color;
+}
+.h1-title-font() {
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 28px;
+  color: white;
+}

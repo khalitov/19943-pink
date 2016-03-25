@@ -5,17 +5,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-    <header class="page-header page-header--menu-opened">
-      <div class="page-header__main-block clearfix">
-        <div class="container">
+    <header class="page-header">  <!-- меню открывается классом page-header--menu-opened -->
+      <div class="page-header__main-block">
+        <div class="container clearfix">
           <a class="logo">
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="logo__img">
           </a>
-          <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
+          <button type="button" class="menu-toggle"></button>  <!-- кнопка меняется классом menu-toggle--close -->
         </div>
       </div>
       <ul class="nav-list">
@@ -32,7 +31,7 @@
           <a href="https://htmlacademy.ru/" class="nav-list__menu-item-link">HTML academy</a>
         </li>
       </ul>
-      <div class="overflow-wrapper">
+      <div class="wrapper-title--with-phone">
         <h1 class="page-header__title page-header__title--with-phone">
           Взгляните на жизнь
           <br>иначе!
@@ -42,9 +41,9 @@
         <div class="container">
           <a href="" class="btn">Скачать приложение</a>
           <div class="download-block__os-choose-block">
-            <a href="#" class="os-btn os-btn--apple"></a>
-            <a href="#" class="os-btn os-btn--android"></a>
-            <a href="#" class="os-btn os-btn--win"></a>
+            <a href="#" class="os-btn os-btn--apple"><img src="img/logo-apple.svg" alt="Apple"></a>
+            <a href="#" class="os-btn os-btn--android"><img src="img/logo-android.svg" alt="Android"></a>
+            <a href="#" class="os-btn os-btn--win"><img src="img/logo-microsoft.svg" alt="Microsoft"></a>
           </div>
           <div class="download-block__available-os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
         </div>
@@ -108,6 +107,7 @@
             <span class="price-section__price-value">1,99 USD</span>
           </th>
           <th class="price-section__title-table-cell price-section__title-table-cell--hit">
+            <i class="price-section__hit-marker">Хит</i>
             <b class="price-section__price-title">Стандарт</b>
             <span class="price-section__price-value">3,99 USD</span>
           </th>

@@ -4,24 +4,22 @@
   background-color: @main-bg-color;
   &__main-block {
     height: 66px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     background-color: rgba(0, 0, 0, .3);
   }
   &__title {
     position: relative;
     height: 155px;
-    padding: 0 35px;
+    padding: 0 20px;
     margin-top: 0;
     margin-bottom: 0;
-    .white-font;
-    font-size: 24px;
-    font-weight: lighter;
+    .h1-title-font();
     text-align: center;
   }
   &__title--with-phone {
     height: auto;
-    padding: 0 20px;
-    padding-bottom: 310px;
+    min-height: 60px;
+    padding-bottom: 313px;
   }
   &__title--with-phone::after {
     content: "";
@@ -29,16 +27,24 @@
     bottom: 0;
     left: 0;
     display: block;
-    height: 315px;
+    height: 313px;
     width: 100%;
     background: url("../img/iphone-hand-mobile.png") 0 bottom no-repeat;
   }
-  // &--menu-opened {
-  //   .page-header__main-block {
-  //     height: 69px;
-  //     margin-bottom: 0;
-  //     background-color: @menu-bg-color;
-  //     border-bottom: 1px solid black;
-  //   }
-  // }
+  & .logo {
+    float: left;
+    margin-top: 22px;
+  }
+  & .menu-toggle {
+    float: right;
+    margin-top: 22px;
+  }
+  &--menu-opened {
+    .page-header__main-block {
+      height: 69px;
+      margin-bottom: 0;
+      background-color: @menu-bg-color;
+      border-bottom: 1px solid black;
+    }
+  }
 }

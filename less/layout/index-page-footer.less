@@ -1,0 +1,46 @@
+.index-page-footer {
+  .index-white-block;
+  padding-top: 45px;
+  padding-bottom: 0;
+  .gray-font;
+  text-align: center;
+  &__invite-text {
+    margin: 0 0 40px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: lighter;
+  }
+  &__contact-item-title {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__contact-item-content {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #d22856;
+  }
+  &__map {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background: url("../img/bg-map.png") 0 bottom no-repeat;
+    background-size: cover;
+    &::before {
+      position: absolute;
+      top: 0;
+      z-index: 20px;
+      content: "";
+      display: block;
+      height: 35px;
+      width: 100%;
+      background-image: linear-gradient(to top right, transparent 50%, white 50%, ),
+                        linear-gradient(to left top, transparent 50%, white 50%);
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0, 100% 0;
+    }
+  }
+}

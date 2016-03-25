@@ -1,0 +1,24 @@
+.wrapper-title--with-phone {
+  height: 373px;
+  overflow: hidden;
+}
+.index-white-block {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: wihte;
+  &:not(:last-of-type)::before {
+    position: absolute;
+    bottom: -25px;
+    z-index: 20px;
+    content: "";
+    display: block;
+    height: 25px;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, white, white 50%, transparent 50%, transparent);
+  }
+}
+.index-gray-block {
+  background-color: #f2f2f2;
+  padding-top: 45px;
+}

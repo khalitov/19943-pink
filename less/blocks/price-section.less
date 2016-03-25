@@ -1,27 +1,27 @@
 .price-section {
   .index-gray-block;
-  padding-top: 65px;
+  padding-top: 90px;
   padding-bottom: 45px;
   text-align: center;
   overflow: hidden;
   &__options-table {
-    width: 400%;
-    margin-left: -230%;
+    // width: 300%;
     margin-bottom: 30px;
+    transform: translateX(-258px);
   }
   &__title-table-cell {
     border-radius: 2px;
   }
   &__title-table-cell {
-    width: 100%;
-    min-width: 276px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    // width: 100%;
+    min-width: 256px;
+    padding: 15px 10px;
     border: 2px solid #e5e5e5;
     border-top: none;
     border-bottom: none;
     text-align: center;
     .white-font;
+    text-transform: uppercase;
     background-color: @menu-bg-color;
   }
   &__price-title {
@@ -30,7 +30,6 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-    text-transform: uppercase;
   }
   &__price-value {
     font-size: 24px;
@@ -38,9 +37,10 @@
     font-weight: lighter;
   }
   &__title-table-cell:first-of-type {
-    border-right: none;
+    display: none;
   }
   &__title-table-cell:nth-of-type(2) {
+    min-width: 258px;
     border-left: none;
   }
   &__title-table-cell:last-of-type {
@@ -49,6 +49,22 @@
   &__title-table-cell--hit {
     position: relative;
   }
+  &__hit-marker {
+    position: absolute;
+    top: 3px;
+    left: 15px;
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-left: -12px;
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;;
+    font-style: normal;
+    transform: rotate(-45deg);
+    z-index: 1000;
+  }
   &__title-table-cell--hit::before {
     content: "";
     position: absolute;
@@ -56,12 +72,14 @@
     display: block;
     width: 72px;
     height: 72px;
-    margin-left: -2px;
+    margin-left: -12px;
     background: url("../img/bg-hit.svg") no-repeat;
   }
   &__options-table-cell {
-    min-width: 237px;
-    padding: 15px 17px 15px 22px;
+// width: 100%;
+    min-width: 236px;
+    padding: 15px 0;
+    padding-left: 20px;
     border-radius: 2px;
     border: 2px solid #e5e5e5;
     border-top: none;
@@ -69,22 +87,20 @@
     background-color: white;
   }
   &__options-table-cell:first-of-type {
-    // visibility: hidden;
+    display: none;
     border-top: 2px solid #e5e5e5;
   }
   &__option-title {
     display: inline-block;
     vertical-align: middle;
-    width: 200px;
+    width: 205px;
+    text-align: left;
   }
   &__option-present {
     display: inline-block;
     vertical-align: middle;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     background: url("../img/icon-yes.svg") right 50% no-repeat;
-  }
-  &__title-table-cell:first-of-type {
-    visibility: hidden;
   }
 }

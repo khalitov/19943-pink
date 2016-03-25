@@ -1,37 +1,39 @@
 @import "normalize.less";
 @import "mixins.less";
-@import "global/fonts.less";
 @import "variables.less";
-@import "global/layout.less";
-@import "blocks/page-header.less";
-@import "blocks/menu-toggle.less";
-@import "blocks/nav-list.less";
-@import "blocks/download-block.less";
-@import "blocks/btn.less";
-@import "blocks/os-btn.less";
-@import "blocks/promo.less";
-@import "blocks/benefit-block.less";
-@import "blocks/mention-section.less";
-@import "blocks/mention-block.less";
-@import "blocks/slider-toggle.less";
-@import "blocks/price-section.less";
-@import "blocks/index-page-footer.less";
-@import "blocks/descr-section.less";
-@import "blocks/user-post.less";
-@import "blocks/block-with-likes.less";
-@import "blocks/like-btn.less";
-@import "blocks/photo-gallery.less";
-@import "blocks/photo-upload-block.less";
-@import "blocks/photo-upload-block.less";
-@import "blocks/photo-edit-block.less";
-@import "blocks/edit-tools-block.less";
-@import "blocks/edit-tool.less";
-@import "blocks/edit-instrument.less";
-@import "blocks/crop-line.less";
-@import "blocks/submit-block.less";
-@import "blocks/page-footer.less";
-@import "blocks/socal-btn-block.less";
-@import "blocks/social-btn.less";
+
+// layout
+@import "layout/base.less";
+@import "layout/page-header.less";
+@import "layout/index-page-footer.less";
+@import "layout/page-footer.less";
+// blocks
+  //header
+    @import "blocks/nav-list.less";
+    @import "blocks/download-block.less";
+  //index
+    @import "blocks/promo.less";
+    @import "blocks/benefit-block.less";
+    @import "blocks/mention-section.less";
+    @import "blocks/mention-block.less";
+    @import "blocks/price-section.less";
+    //photo
+    @import "blocks/descr-section.less";
+    @import "blocks/user-post.less";
+    @import "blocks/block-with-likes.less";
+    @import "blocks/photo-gallery.less";
+    @import "blocks/photo-upload-block.less";
+    @import "blocks/photo-edit-block.less";
+    @import "blocks/edit-tools-block.less";
+    @import "blocks/edit-tool.less";
+    @import "blocks/edit-instrument.less";
+    @import "blocks/crop-line.less";
+    @import "blocks/submit-block.less";
+@import "blocks/social-btn-block.less";
 @import "blocks/created.less";
-@import "blocks/form-section.less";
-@import "blocks/submit-btn.less";
+// styleguide
+@import "styleguide/typography.less";
+@import "styleguide/btns.less";
+@import "styleguide/form-section.less";
+// pages
+@import "pages/index.less";
