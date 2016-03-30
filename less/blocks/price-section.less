@@ -2,18 +2,19 @@
   .index-gray-block;
   padding-top: 90px;
   padding-bottom: 45px;
+  padding-left: 20px;
   text-align: center;
   overflow: hidden;
   &__options-table {
-    // width: 300%;
+    width: ~"calc(300% - 80px)";
     margin-bottom: 30px;
-    transform: translateX(-258px);
+    transform: translateX(-33.3%);
   }
   &__title-table-cell {
     border-radius: 2px;
   }
   &__title-table-cell {
-    // width: 100%;
+    width: 33.3333%;
     min-width: 256px;
     padding: 15px 10px;
     border: 2px solid #e5e5e5;
@@ -46,13 +47,13 @@
   &__title-table-cell:last-of-type {
     border-right: none;
   }
-  &__title-table-cell--hit {
+  &__title-table-cell--hit &__cell-wrapper {
     position: relative;
   }
   &__hit-marker {
     position: absolute;
-    top: 3px;
-    left: 15px;
+    top: -10px;
+    left: 5px;
     display: block;
     width: 72px;
     height: 72px;
@@ -63,12 +64,13 @@
     font-weight: bold;;
     font-style: normal;
     transform: rotate(-45deg);
-    z-index: 1000;
+    z-index: 100;
   }
-  &__title-table-cell--hit::before {
+  &__title-table-cell--hit &__cell-wrapper::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -15px;
+    z-index: 10;
     display: block;
     width: 72px;
     height: 72px;
@@ -76,14 +78,13 @@
     background: url("../img/bg-hit.svg") no-repeat;
   }
   &__options-table-cell {
-// width: 100%;
     min-width: 236px;
     padding: 15px 0;
     padding-left: 20px;
     border-radius: 2px;
     border: 2px solid #e5e5e5;
     border-top: none;
-    text-align: left;
+    text-align: center;
     background-color: white;
   }
   &__options-table-cell:first-of-type {
@@ -93,14 +94,20 @@
   &__option-title {
     display: inline-block;
     vertical-align: middle;
-    width: 205px;
+    width: 192px;
+    font-size: 14px;
+    font-weight: normal;
     text-align: left;
+    text-transform: uppercase;
   }
   &__option-present {
     display: inline-block;
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    background: url("../img/icon-yes.svg") right 50% no-repeat;
+    background: url("../img/icon-yes.svg") left 50% no-repeat;
+    &--no {
+      background: url("../img/icon-no.svg") left 50% no-repeat;
+    }
   }
 }

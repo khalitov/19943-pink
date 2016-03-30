@@ -9,16 +9,17 @@
   </head>
 
   <body>
-    <header class="page-header page-header--menu-opened">
-      <div class="page-header__main-block">
+    <header class="page-header">
+      <div class="page-header__main-block"> <!-- блок изменяется классом page-header__main-block--menu-opened -->
         <div class="container">
           <a href="index.html" class="logo">
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="logo__img">
           </a>
-          <button type="button" class="menu-toggle menu-toggle--close-btn"></button>
+          <button type="button" class="menu-toggle menu-toggle--close-btn"></button> <!-- кнопка меняется классом menu-toggle--menu-opened -->
         </div>
       </div>
       <ul class="nav-list">
+        <!-- меню открывается классом nav-list--menu-opened -->
         <li class="nav-list__menu-item">
           <a href="index.html" class="nav-list__menu-item-link">Главная</a>
         </li>
@@ -32,7 +33,7 @@
           <a href="https://htmlacademy.ru/" class="nav-list__menu-item-link">HTML academy</a>
         </li>
       </ul>
-      <h1 class="page-header__title">
+      <h1 class="page-header__title page-header__title--index">
         Фотографии пользователей
         <br>
       </h1>
@@ -73,7 +74,7 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/img.jpg" alt="" class="user-post__img">
+        <img src="img/photo-2-mobile.jpg" alt="" class="user-post__img">
         <div class="user-post__user-text">
           <b class="user-post__user-name">Антон</b>
           <span class="user-post__date">(12 часов назад)</span>
@@ -86,7 +87,7 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/img.jpg" alt="" class="user-post__img">
+        <img src="img/photo-3-mobile.jpg" alt="" class="user-post__img">
         <div class="user-post__user-text">
           <b class="user-post__user-name">Борис</b>
           <span class="user-post__date">(20 часов назад)</span>
@@ -99,7 +100,7 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/img.jpg" alt="" class="user-post__img">
+        <img src="img/photo-4-mobile.jpg" alt="" class="user-post__img">
         <div class="user-post__user-text">
           <b class="user-post__user-name">Сергей</b>
           <span class="user-post__date">(25 часов назад)</span>
@@ -112,7 +113,7 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/img.jpg" alt="" class="user-post__img">
+        <img src="img/photo-5-mobile.jpg" alt="" class="user-post__img">
         <div class="user-post__user-text">
           <b class="user-post__user-name">Максим</b>
           <span class="user-post__date">(40 часов назад)</span>
@@ -125,7 +126,7 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/img.jpg" alt="" class="user-post__img">
+        <img src="img/photo-6-mobile.jpg" alt="" class="user-post__img">
         <div class="user-post__user-text">
           <b class="user-post__user-name">Надежда</b>
           <span class="user-post__date">(45 часов назад)</span>
@@ -137,7 +138,7 @@
           </div>
         </div>
       </article>
-      <div class="descr-section">
+      <div class="descr-section descr-section--short-padding">
         <div class="container">
           <p class="descr-section__text">
             Затмите их всех!
@@ -163,7 +164,7 @@
         <button type="reset" class="btn btn--transparent">Отмена</button>
       </div>
     </form>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--short-padding">
       <div class="container">
         <a href="#" class="logo logo--with-glasses">
           <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" class="logo__img">
@@ -178,6 +179,7 @@
         </div>
       </div>
     </footer>
+    <script src="\js\menu-toggle.js"></script>
   </body>
 
 </html>

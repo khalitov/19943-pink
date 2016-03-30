@@ -8,16 +8,19 @@
   </head>
 
   <body>
-    <header class="page-header">  <!-- меню открывается классом page-header--menu-opened -->
+    <header class="page-header">
       <div class="page-header__main-block">
+        <!-- блок изменяется классом page-header__main-block--menu-opened -->
         <div class="container clearfix">
           <a class="logo">
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип" class="logo__img">
           </a>
-          <button type="button" class="menu-toggle"></button>  <!-- кнопка меняется классом menu-toggle--close -->
+          <button type="button" class="menu-toggle"></button>
+          <!-- кнопка меняется классом menu-toggle--menu-opened -->
         </div>
       </div>
       <ul class="nav-list">
+        <!-- меню открывается классом nav-list--menu-opened -->
         <li class="nav-list__menu-item">
           <a href="index.html" class="nav-list__menu-item-link">Главная</a>
         </li>
@@ -41,9 +44,15 @@
         <div class="container">
           <a href="" class="btn">Скачать приложение</a>
           <div class="download-block__os-choose-block">
-            <a href="#" class="os-btn os-btn--apple"><img src="img/logo-apple.svg" alt="Apple"></a>
-            <a href="#" class="os-btn os-btn--android"><img src="img/logo-android.svg" alt="Android"></a>
-            <a href="#" class="os-btn os-btn--win"><img src="img/logo-microsoft.svg" alt="Microsoft"></a>
+            <a href="#" class="os-btn os-btn--apple">
+              <img src="img/logo-apple.svg" alt="Apple">
+            </a>
+            <a href="#" class="os-btn os-btn--android">
+              <img src="img/logo-android.svg" alt="Android">
+            </a>
+            <a href="#" class="os-btn os-btn--win">
+              <img src="img/logo-microsoft.svg" alt="Microsoft">
+            </a>
           </div>
           <div class="download-block__available-os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
         </div>
@@ -103,54 +112,63 @@
         <tr class="price-section__title-table-row">
           <th class="price-section__title-table-cell"></th>
           <th class="price-section__title-table-cell">
-            <b class="price-section__price-title">База</b>
-            <span class="price-section__price-value">1,99 USD</span>
+            <div class="price-section__cell-wrapper"><b class="price-section__price-title">База</b>
+              <span class="price-section__price-value">1,99 USD</span></div>
           </th>
           <th class="price-section__title-table-cell price-section__title-table-cell--hit">
-            <i class="price-section__hit-marker">Хит</i>
-            <b class="price-section__price-title">Стандарт</b>
-            <span class="price-section__price-value">3,99 USD</span>
+            <div class="price-section__cell-wrapper"><i class="price-section__hit-marker">Хит</i>
+              <b class="price-section__price-title">Стандарт</b>
+              <span class="price-section__price-value">3,99 USD</span></div>
           </th>
           <th class="price-section__title-table-cell">
-            <b class="price-section__price-title">Анлим</b>
-            <span class="price-section__price-value">9,99 USD</span>
+            <div class="price-section__cell-wrapper"><b class="price-section__price-title">Анлим</b>
+              <span class="price-section__price-value">9,99 USD</span></div>
           </th>
         </tr>
         <tr class="price-section__options-table-row">
           <td class="price-section__options-table-cell price-section__options-table-cell--name">Розовый фильтр</td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Розовый фильтр</b>
-            <i class="price-section__option-present price-section__option-present--no"></i></td>
+            <div class="price-section__cell-wrapper"><b class="price-section__option-title">Розовый фильтр</b>
+              <i class="price-section__option-present price-section__option-present--yes"></i></div>
+          </td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Розовый фильтр</b>
-            <i class="price-section__option-present price-section__option-present--yes"></i></td>
+            <div class="price-section__cell-wrapper"><b class="price-section__option-title">Розовый фильтр</b>
+              <i class="price-section__option-present price-section__option-present--yes"></i></div>
+          </td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Розовый фильтр</b>
-            <i class="price-section__option-present price-section__option-present--no"></i></td>
+            <div class="price-section__cell-wrapper"> <b class="price-section__option-title">Розовый фильтр</b>
+              <i class="price-section__option-present price-section__option-present--yes"></i></div>
+          </td>
         </tr>
         <tr class="price-section__options-table-row">
           <td class="price-section__options-table-cell price-section__options-table-cell--name">Смайлики</td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Смайлики</b>
-            <i class="price-section__option-present price-section__option-present--no"></i></td>
+            <div class="price-section__cell-wrapper"> <b class="price-section__option-title">Смайлики</b>
+              <i class="price-section__option-present price-section__option-present--no"></i></div>
+          </td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Смайлики</b>
-            <i class="price-section__option-present price-section__option-present--yes"></i></td>
+            <div class="price-section__cell-wrapper"> <b class="price-section__option-title">Смайлики</b>
+              <i class="price-section__option-present price-section__option-present--yes"></i></div>
+          </td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Смайлики</b>
-            <i class="price-section__option-present price-section__option-present--no"></i></td>
+            <div class="price-section__cell-wrapper"> <b class="price-section__option-title">Смайлики</b>
+              <i class="price-section__option-present price-section__option-present--yes"></i></div>
+          </td>
         </tr>
         <tr class="price-section__options-table-row">
           <td class="price-section__options-table-cell price-section__options-table-cell--name">Комментарии</td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Комментарии</b>
-            <i class="price-section__option-present price-section__option-present--no"></i></td>
+            <div class="price-section__cell-wrapper"> <b class="price-section__option-title">Комментарии</b>
+              <i class="price-section__option-present price-section__option-present--no"></i></div>
+          </td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Комментарии</b>
-            <i class="price-section__option-present price-section__option-present--no"></i></td>
+            <div class="price-section__cell-wrapper"> <b class="price-section__option-title">Комментарии</b>
+              <i class="price-section__option-present price-section__option-present--no"></i></div>
+          </td>
           <td class="price-section__options-table-cell">
-            <b class="price-section__option-title">Комментарии</b>
-            <i class="price-section__option-present price-section__option-present--no"></i></td>
+            <div class="price-section__cell-wrapper"> <b class="price-section__option-title">Комментарии</b>
+              <i class="price-section__option-present price-section__option-present--yes"></i></div>
+          </td>
         </tr>
       </table>
       <ul class="slider-toggle">
@@ -179,6 +197,7 @@
       </div>
       <div class="index-page-footer__map"></div>
     </footer>
+    <script src="\js\menu-toggle.js"></script>
   </body>
 
 </html>

@@ -3,7 +3,8 @@
   top: 69px;
   z-index: 10;
   display: none;
-  width: 320px;
+  width: 100%;
+  max-width: 699px;
   margin-top: 0;
   padding-left: 0;
   list-style: none;
@@ -11,6 +12,7 @@
   &__menu-item-link {
     display: block;
     height: 63px;
+    padding: 0 10px;
     border-top: 1px solid #485461;
     border-bottom: 1px solid black;
     .white-font;
@@ -22,5 +24,8 @@
     text-decoration: none;
     text-align: center;
     background-color: @menu-bg-color;
+  }
+  &--menu-opened {
+    display: block;
   }
 }

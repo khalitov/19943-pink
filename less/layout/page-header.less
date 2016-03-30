@@ -2,15 +2,26 @@
   color: white;
   background: url("../img/bg-back-mobile.jpg") -190px 0 no-repeat;
   background-color: @main-bg-color;
+  @media (min-width: 500px) {
+    & {
+      background: url("../img/bg-back-mobile.jpg") 0 0 no-repeat;
+    }
+  }
   &__main-block {
     height: 66px;
-    margin-bottom: 20px;
     background-color: rgba(0, 0, 0, .3);
+    &--menu-opened {
+      height: 69px;
+      margin-bottom: 0;
+      background-color: @menu-bg-color;
+      border-bottom: 1px solid black;
+    }
   }
   &__title {
     position: relative;
-    height: 155px;
+    height: 140px;
     padding: 0 20px;
+    padding-top: 30px;
     margin-top: 0;
     margin-bottom: 0;
     .h1-title-font();
@@ -19,7 +30,11 @@
   &__title--with-phone {
     height: auto;
     min-height: 60px;
-    padding-bottom: 313px;
+    padding-top: 15px;
+    padding-bottom: 318px;
+    &--menu-opened {
+      padding-bottom: 314px;
+    }
   }
   &__title--with-phone::after {
     content: "";
@@ -27,9 +42,12 @@
     bottom: 0;
     left: 0;
     display: block;
-    height: 313px;
+    height: 318px;
     width: 100%;
     background: url("../img/iphone-hand-mobile.png") 0 bottom no-repeat;
+    &--menu-opened {
+      height: 314px;
+    }
   }
   & .logo {
     float: left;
@@ -38,13 +56,5 @@
   & .menu-toggle {
     float: right;
     margin-top: 22px;
-  }
-  &--menu-opened {
-    .page-header__main-block {
-      height: 69px;
-      margin-bottom: 0;
-      background-color: @menu-bg-color;
-      border-bottom: 1px solid black;
-    }
   }
 }

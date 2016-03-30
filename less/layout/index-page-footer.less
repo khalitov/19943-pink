@@ -5,10 +5,16 @@
   .gray-font;
   text-align: center;
   &__invite-text {
-    margin: 0 0 40px;
+    margin: 0 0 35px;
     font-size: 24px;
     line-height: 28px;
     font-weight: lighter;
+  }
+  &__contact-item {
+    margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 35px;
+    }
   }
   &__contact-item-title {
     display: block;
@@ -16,8 +22,6 @@
     font-weight: bold;
   }
   &__contact-item-content {
-    display: block;
-    margin-bottom: 25px;
     font-size: 24px;
     font-weight: lighter;
     color: #d22856;
@@ -28,6 +32,21 @@
     width: 100%;
     background: url("../img/bg-map.png") 0 bottom no-repeat;
     background-size: cover;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 20;
+      display: block;
+      height: 16px;
+      width: 16px;
+      margin-top: -13px;
+      margin-left: -13px;
+      background-color: #d22856;
+      border: 10px solid white;
+      border-radius: 50%;
+    }
     &::before {
       position: absolute;
       top: 0;

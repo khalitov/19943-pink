@@ -1,9 +1,8 @@
 .user-post {
-  // position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   padding: 0 20px;
   margin-bottom: 20px;
   &:first-of-type {
@@ -14,14 +13,20 @@
     }
   }
   &__img {
+    height: 180px;
     width: 100%;
+    max-width: 280px;
   }
   &__user-text {
-    align-content: stretch;
-    padding: 20px 25px 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px 25px 15px 20px;
     background: #f2f2f2;
   }
   &__user-name {
+    margin-right: 4px;
     .main-font;
     font-size: 14px;
     line-height: 24px;
@@ -35,7 +40,9 @@
     text-transform: uppercase;
   }
   &__content {
-    margin: 0 0 15px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
     .gray-font;
     font-size: 14px;
     line-height: 24px;
@@ -43,6 +50,10 @@
   &__best-img-wrapper {
     position: relative;
     display: flex;
+    & img {
+      height: 137px;
+      max-width: 320px;
+    }
   }
   &__best-img-wrapper::after {
     content: "Панорама дня";
