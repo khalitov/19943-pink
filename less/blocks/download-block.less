@@ -8,6 +8,25 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: lighter;
-    opacity: .8;
+    opacity: 0.8;
+    @media @tablet-widths {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  @media @tablet-widths {
+    & {
+      z-index: 3;
+      width: 380px;
+      padding-top: 33px;
+      padding-bottom: 115px;
+      margin-left: ~"calc((100% - 660px) / 2)";
+      background-color: transparent;
+    }
+    & .container {
+      width: 300px;
+      padding: 0 40px;
+      // border: 1px solid red;
+    }
   }
 }

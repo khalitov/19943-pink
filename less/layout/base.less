@@ -1,7 +1,7 @@
 body {
   min-width: 320px;
-  max-width: 699px;
   margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
   .main-font;
   text-align: center;
 }
@@ -12,4 +12,11 @@ p {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  @media @tablet-widths {
+    & {
+      width: 620px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+  }
 }

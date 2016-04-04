@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--with-phone">
       <div class="page-header__main-block">
         <!-- блок изменяется классом page-header__main-block--menu-opened -->
         <div class="container clearfix">
@@ -37,8 +37,8 @@
       </ul>
       <div class="wrapper-title--with-phone">
         <h1 class="page-header__title page-header__title--with-phone">
-          Взгляните на жизнь
-          <br>иначе!
+          Взгляните
+          <br> на жизнь иначе!
         </h1>
       </div>
       <div class="download-block">
@@ -66,7 +66,7 @@
       </div>
     </div>
     <div class="benefit-block">
-      <div class="container">
+      <div class="container clearfix">
         <div class="benefit-block__benefit-item">
           <b class="benefit-block__benefit-title">Поднимает настроение</b>
           <p class="benefit-block__benefit-descr">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
@@ -82,21 +82,34 @@
         </div>
       </div>
     </div>
+
+    <div class="research-block">
+      <div class="container clearfix">
+        <b class="research-block__title">Эффект <br>на 24 часа!</b>
+        <p class="research-block__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a href="" class="research-block__details-link">Узнать больше об исследовании</a>
+      </div>
+    </div>
+
     <div class="mention-section">
       <div class="container">
         <div class="mention-block">
           <b class="mention-block__user-name">Николай Петров</b>
+          <i class="mention-block__user-info">25 лет, водитель трамвая</i>
           <p class="mention-block__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </div>
         <div class="mention-block">
           <b class="mention-block__user-name">Николай Петров-2</b>
+          <i class="mention-block__user-info">25 лет, водитель трамвая</i>
           <p class="mention-block__user-text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </div>
         <div class="mention-block">
           <b class="mention-block__user-name">Николай Петров-3</b>
+          <i class="mention-block__user-info">25 лет, водитель трамвая</i>
           <p class="mention-block__user-text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
@@ -181,22 +194,37 @@
     <footer class="index-page-footer">
       <div class="container">
         <div class="index-page-footer__contact-ways">
-          <p class="index-page-footer__invite-text">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="index-page-footer__invite-text"><span class="index-page-footer__invite-text-sentence">Остались вопросы?</span> <span class="index-page-footer__invite-text-sentence">Свяжитесь с нами!</span></p>
           <div class="index-page-footer__contact-item">
-            <b class="index-page-footer__contact-item-title">Звоните</b>
+            <b class="index-page-footer__contact-item-title">Звоните:</b>
             <span class="index-page-footer__contact-item-content">+7 (812) 555-66-66</span>
           </div>
           <div class="index-page-footer__contact-item">
-            <b class="index-page-footer__contact-item-title">Пишите</b>
+            <b class="index-page-footer__contact-item-title">Пишите:</b>
             <span class="index-page-footer__contact-item-content">mail@htmlacademy.ru</span>
           </div>
           <div class="index-page-footer__contact-item">
-            <b class="index-page-footer__contact-item-title">Приезжайте в гости</b>
+            <b class="index-page-footer__contact-item-title">Приезжайте в гости:</b>
             <span class="index-page-footer__contact-item-content">ул. Большая Конюшенная, 19/8</span>
           </div>
         </div>
       </div>
       <div class="index-page-footer__map"></div>
+      <div class="index-page-footer__standart-footer">
+        <div class="container">
+          <a href="#" class="logo logo--with-glasses">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" class="logo__img">
+          </a>
+          <div class="socal-btn-block">
+            <a href="#" class="social-btn social-btn--tw"></a>
+            <a href="#" class="social-btn social-btn--fb"></a>
+            <a href="#" class="social-btn social-btn--youtube"></a>
+          </div>
+          <div class="created">
+            <a href="" class="created__link">Разработано</a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js\menu-toggle.js"></script>
   </body>

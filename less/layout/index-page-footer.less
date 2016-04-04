@@ -1,19 +1,46 @@
 .index-page-footer {
+  @media @tablet-widths {
+    & {
+      padding-top: 45px;
+    }
+    &__invite-text-sentence {
+      display: block;
+      // padding-top: 50px;
+    }
+  }
   .index-white-block;
   padding-top: 45px;
   padding-bottom: 0;
   .gray-font;
   text-align: center;
   &__invite-text {
+    @media @tablet-widths {
+      & {
+        margin-bottom: 45px;
+        font-size: 40px;
+        line-height: 48px;
+      }
+      &:last-of-type {
+        margin-bottom: 35px;
+      }
+    }
     margin: 0 0 35px;
     font-size: 24px;
     line-height: 28px;
     font-weight: lighter;
   }
   &__contact-item {
+    @media @tablet-widths {
+      & {
+        display: inline-block;
+        vertical-align: middle;
+        width: 300px;
+        margin-bottom: 45px;
+      }
+    }
     margin-bottom: 15px;
     &:last-of-type {
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
   }
   &__contact-item-title {
@@ -27,6 +54,10 @@
     color: #d22856;
   }
   &__map {
+    @media @tablet-widths {
+      & {
+        height: 378px;
+        }}
     position: relative;
     height: 200px;
     width: 100%;
@@ -48,6 +79,10 @@
       border-radius: 50%;
     }
     &::before {
+      @media @tablet-widths {
+        & {
+          height: 70px;
+          }}
       position: absolute;
       top: 0;
       z-index: 20px;
@@ -55,11 +90,31 @@
       display: block;
       height: 35px;
       width: 100%;
-      background-image: linear-gradient(to top right, transparent 50%, white 50%, ),
-                        linear-gradient(to left top, transparent 50%, white 50%);
+      background-image: linear-gradient(to top right, transparent 50%, white 50%, ), linear-gradient(to left top, transparent 50%, white 50%);
       background-size: 50% 100%;
       background-repeat: no-repeat;
       background-position: 0 0, 100% 0;
     }
+  }
+  &__standart-footer {
+    @media @mobile-widths-only {
+      & {
+        display: none;
+      }
+    }
+    & {
+      height: 88px;
+      padding-top: 40px;
+    }
+    & .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      vertical-align: middle;
+
+    }
+& .socal-btn-block {
+  margin: 0;
+}
   }
 }

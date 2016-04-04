@@ -1,0 +1,47 @@
+.research-block {
+  @media @mobile-widths-only {
+    & {
+      display: none;
+    }
+  }
+  // width: 290px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  padding: 60px 0;
+  // padding-right: 40px;
+  // padding-left: ~"calc(100% - 370px)";
+  text-align: left;
+  &__title {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 36px;
+    &::before {
+      position: absolute;
+      top: -45px;
+      left: -310px;
+      content: "";
+      display: block;
+      width: 240px;
+      height: 280px;
+      background: url("../img/timer.png") center 50% no-repeat;
+    }
+  }
+  &__descr {
+    margin-bottom: 6px;
+    color: #283645;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__details-link {
+    color: #d22856;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  & > .container > * {
+    width: 310px;
+    float: right;
+    clear: right;
+  }
+}

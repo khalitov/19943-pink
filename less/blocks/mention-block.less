@@ -1,6 +1,21 @@
 .mention-block {
+  @media @tablet-widths {
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  }
   text-align: center;
   &__user-name {
+    @media @tablet-widths {
+      & {
+        margin-bottom: 5px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
     display: block;
     margin-bottom: 15px;
     .main-font;
@@ -8,7 +23,26 @@
     line-height: 30px;
     font-weight: bold;
   }
+  &__user-info {
+    @media @mobile-widths-only {
+      & {
+        display: none;
+      }
+    }
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 30px;
+    font-style: normal;
+  }
   &__user-text {
+    @media @tablet-widths {
+      & {
+        order: -1;
+        margin-bottom: 35px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
     margin-bottom: 25px;
     font-size: 14px;
     line-height: 30px;

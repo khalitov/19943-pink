@@ -1,12 +1,51 @@
 .benefit-block {
-  background: url("../img/iphone-screen-mobile.png") center 505px no-repeat;
+  position: relative;
   .index-gray-block;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 290px;
   .main-font;
   text-align: center;
+  &::before {
+    position: absolute;
+    top: -35px;
+    z-index: 100px;
+    content: "";
+    display: block;
+    height: 35px;
+    width: 100%;
+    background-image: linear-gradient(to left top, #f2f2f2, #f2f2f2 50%, transparent 50%, transparent);
+    @media @tablet-widths {
+      & {
+        top: -55px;
+        height: 55px;
+      }
+    }
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 280px;
+    background: url("../img/iphone-screen-mobile.png") center 0 no-repeat;
+    @media @tablet-widths {
+      & {
+        display: none;
+      }
+    }
+  }
   &__benefit-item {
     margin-bottom: 30px;
+    @media @tablet-widths {
+      & {
+        float: right;
+        clear: right;
+        width: 310px;
+        margin-bottom: 37px;
+        text-align: left;
+      }
+    }
   }
   &__benefit-title {
     display: block;
@@ -18,5 +57,27 @@
   &__benefit-descr {
     font-size: 14px;
     line-height: 24px;
+  }
+  @media @tablet-widths {
+    & {
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+
+    & .container {
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 35px;
+        z-index: 50px;
+        content: "";
+        display: block;
+        width: 275px;
+        height: 480px;
+        background: url("../img/iphone-screen-mobile.png") 0 0 no-repeat;
+        background-size: cover;
+      }
+    }
   }
 }
