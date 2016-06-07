@@ -1,0 +1,140 @@
+.user-post {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  font-size: 0;
+  background: #f2f2f2;
+
+  @media @tablet-widths {
+    // box-sizing: border-box;
+    width: 300px;
+    // padding-bottom: 50px;
+  }
+
+  &--best {
+    // box-sizing   : content-box;
+    width: 100%;
+    padding: 0;
+    background: 0;
+    &__user-text {
+      margin: 0 20px;
+      @media @tablet-widths {
+        margin: 0 40px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 180px;
+
+    &--best-today {
+      width: 100%;
+      height: 137px;
+      @media @tablet-widths {
+        // width : 100%;
+        height: 511px;
+      }
+    }
+  }
+
+  &__user-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    height: inherit;
+    padding: 20px 25px 15px 20px;
+    text-align: left;
+    background: #f2f2f2;
+
+    &--best {
+      padding-bottom: 20px;
+      // box-sizing: content-box;
+      // .container-mobile;
+      // @media @tablet-widths {
+      //   flex-direction : row;
+      //   flex-wrap      : wrap;
+      //   justify-content: space-between;
+      //   margin         : 0 40px;
+      // }
+    }
+  }
+
+  &__user-info {
+    &--best {
+      @media @tablet-widths {
+        order: 1;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__user-name {
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__date {
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    .gray-font;
+  }
+
+  &__content {
+    width: 100%;
+    // margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+
+    .gray-font;
+
+    &--best {
+      @media @tablet-widths {
+        order: 3;
+      }
+    }
+  }
+
+  &__best-img-wrapper {
+    position: relative;
+    width: 100%;
+
+    & picture {
+      height: 0;
+    }
+  }
+
+  &__best-img-wrapper::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 10;
+    display: block;
+    width: 140px;
+    height: 30px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background-color: #d22856;
+    @media @tablet-widths {
+      top: 55px;
+      right: 40px;
+    }
+  }
+}

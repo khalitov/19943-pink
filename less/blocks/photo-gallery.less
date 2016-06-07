@@ -1,0 +1,12 @@
+.photo-gallery {
+  & .container-mobile {
+    display       : flex;
+    flex-direction: column;
+    @media @tablet-widths {
+      flex-direction : row;
+      flex-wrap      : wrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+}

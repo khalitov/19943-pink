@@ -1,0 +1,44 @@
+.photo-upload-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0 0;
+  background: #f2f2f2;
+  @media @tablet-widths {
+    padding-top: 55px;
+  }
+  @media @desktop-widths {
+    padding-right: 60px;
+    padding-left: 80px;
+  }
+
+  &__uploaded-pic {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media @tablet-widths {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 55px;
+      padding: 0;
+    }
+    @media @desktop-widths {
+      margin-right: 90px;
+      margin-bottom: 60px;
+    }
+  }
+  // & .container-tablet {
+  //   @media @desktop-widths {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: center;
+  //   }
+  // }
+  // & .container-mobile {
+  //   width: auto;
+  //   padding: 0;
+  //   @media @tablet-widths {
+  //     flex-direction: row;
+  //   }
+  // }
+}

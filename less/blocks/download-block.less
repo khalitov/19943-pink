@@ -1,0 +1,58 @@
+.download-block {
+  clear           : both;
+  padding-top     : 28px;
+  padding-bottom  : 28px;
+  text-align      : center;
+  background-color: @main-bg-color;
+
+  &__os-choose-block {
+    margin-bottom: 20px;
+    @media @tablet-widths {
+      margin-bottom: 40px;
+    }
+    @media @desktop-widths {
+      margin-bottom: 55px;
+  }
+}
+  &__available-os {
+    .white-font;
+    position   : relative;
+    z-index    : 3;
+    font-size  : 14px;
+    line-height: 24px;
+    font-weight: lighter;
+    opacity    : 0.8;
+    @media @tablet-widths {
+      font-size  : 18px;
+      line-height: 24px;
+    }
+
+  }
+  @media @tablet-widths {
+    z-index         : 3;
+    width           : 300px;
+    padding-top     : 28px;
+    padding-bottom  : 104px;
+    margin-bottom: 0px;
+    background-color: transparent;
+
+    .container-mobile {
+      width  : 300px;
+      padding: 0;
+    }
+  }
+  @media @desktop-widths {
+    padding-top   : 53px;
+    padding-bottom: 120px;
+  }
+
+  .btn {
+    margin-bottom: 30px;
+    @media @tablet-widths {
+      margin-bottom: 40px;
+    }
+    @media @desktop-widths {
+      margin-bottom: 65px;
+    }
+  }
+}

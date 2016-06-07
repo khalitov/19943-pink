@@ -1,0 +1,46 @@
+.created {
+  position: relative;
+  text-align: center;
+  // vertical-align: bottom;
+
+  &:hover &__link--logo {
+    fill: #000000;
+  }
+
+  &:active &__link--logo {
+    opacity: 0.3;
+  }
+
+  &__link {
+    .gray-font;
+    // display        : block;
+
+    position: relative;
+    padding-right: 40px;
+    font-size: 14px;
+    text-decoration: none;
+
+
+    &--logo {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: inline-block;
+      width: 27px;
+      height: 34px;
+      margin-top: -17px;
+
+      fill: #d22856;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: 0;
+      display: inline-block;
+      width: 30px;
+      height: 35px;
+    }
+  }
+}

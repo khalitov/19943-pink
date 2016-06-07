@@ -1,0 +1,32 @@
+.submit-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 20px 40px;
+  @media @tablet-widths {
+    padding-top: 65px;
+    padding-bottom: 55px;
+  }
+  @media @desktop-widths {
+    flex-direction: row;
+    // justify-content: center;
+    padding: 0;
+    padding-top: 145px;
+  }
+  & .btn {
+    margin-bottom: 12px;
+    @media @desktop-widths {
+      width: 180px;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+      @media @desktop-widths {
+        margin-right: 0;
+      }
+    }
+  }
+}

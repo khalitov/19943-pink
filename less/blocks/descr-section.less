@@ -1,0 +1,31 @@
+.descr-section {
+  padding: 45px 0 50px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+  .gray-font;
+
+  @media @tablet-widths {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &--short-padding {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__further-text {
+    @media @mobile-widths-only {
+      display: none;
+    }
+  }
+}

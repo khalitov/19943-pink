@@ -1,0 +1,23 @@
+.page-footer {
+  padding: 50px 0;
+  text-align: center;
+
+  @media @tablet-widths {
+    .container-mobile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & > * {
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &--short-padding {
+    padding-top: 40px;
+  }
+}
