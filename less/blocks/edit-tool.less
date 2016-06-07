@@ -1,15 +1,78 @@
 .edit-tool {
   width: 50px;
-  height: 45px;
+  height: 50px;
   margin: 0 15px;
   border: none;
-  &--crop {
-    background: url("../img/icon-editor-crop.svg") 0 50% no-repeat;
+  @media @tablet-widths {
+    width: 30px;
+    height: 30px;
+    margin: 0;
   }
-  &--fill {
-    background: url("../img/icon-editor-fill.svg") 0 50% no-repeat;
+  @media @desktop-widths {
+    width: 50px;
+    height: 50px;
   }
-  &--contrast {
-    background: url("../img/icon-editor-contrast.svg") 0 50% no-repeat;
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+    opacity: 0.3;
+    @media @tablet-widths {
+      opacity: 1;
+
+      fill: #d22856;
+    }
+
+    &--crop {
+      @media @tablet-widths {
+        width: 23px;
+        height: 23px;
+      }
+      @media @desktop-widths {
+        width: 44px;
+        height: 44px;
+      }
+    }
+    &--fill {
+      width: 43px;
+      height: 49px;
+      @media @tablet-widths {
+        width: 24px;
+        height: 22px;
+      }
+      @media @desktop-widths {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+      @media @tablet-widths {
+        width: 16px;
+        height: 16px;
+        * path {
+          fill: #d22856;
+        }
+      }
+      @media @desktop-widths {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &--active {
+      opacity: 1;
+
+      fill: #d22856;
+    }
+
+    &--active&--contrast {
+      * path {
+        fill: #d22856;
+      }
+    }
   }
 }

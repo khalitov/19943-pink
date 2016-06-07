@@ -2,21 +2,46 @@ body {
   min-width: 320px;
   margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
-  .main-font;
   text-align: center;
+
+  .main-font;
 }
+
 p {
   margin: 0;
 }
-.container {
+
+.container-mobile {
   width: 280px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
   @media @tablet-widths {
-    & {
-      width: 620px;
-      margin: 0 auto;
-      padding: 0 40px;
-    }
+    width: 620px;
+    padding: 0 40px;
+  }
+  @media @desktop-widths {
+    width: 940px;
+    padding: 0 130px;
+  }
+}
+
+.container-tablet {
+  @media @tablet-widths {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  @media @desktop-widths {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+}
+
+.container-desctop {
+  @media @desktop-widths {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 130px;
   }
 }

@@ -1,12 +1,9 @@
 .mention-section {
-  @media @tablet-widths {
-    & {
-      padding-bottom: 15px;
-      }}
-  position: relative;
   .index-white-block;
+  position: relative;
   padding-bottom: 40px;
   text-align: center;
+
   &:not(:last-of-type)::before {
     position: absolute;
     bottom: -25px;
@@ -16,11 +13,27 @@
     height: 25px;
     width: 100%;
     background-image: linear-gradient(to right bottom, white, white 50%, transparent 50%, transparent);
+
     @media @tablet-widths {
-      & {
-        bottom: -55px;
-        height: 55px;
-      }
+      bottom: -55px;
+      height: 55px;
+    }
+    @media @desktop-widths {
+      bottom: -80px;
+      height: 80px;
+    }
+  }
+
+  @media @tablet-widths {
+    padding-bottom: 15px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 185px;
+    padding-bottom: 15px;
+
+    .slider-toggle {
+      display: none;
     }
   }
 }

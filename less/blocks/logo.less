@@ -1,0 +1,43 @@
+.logo {
+  display   : block;
+  width     : 76.43px;
+  height    : 24.86px;
+  background: url("../img/svglogo.svg") 67.23489141769053% 23.790277309980915% no-repeat;
+
+  &:active {
+    opacity: 0.3;
+  }
+  @media @tablet-widths {
+    width     : 148.3px;
+    height    : 42.88px;
+    background: url("../img/svglogo.svg") 0 26.38525712862657% no-repeat;
+
+    &:hover {
+      background: url("../img/svglogo.svg") 99.73100201748488% 0 no-repeat;
+    }
+  }
+  @media @desktop-widths {
+    width     : 148.3px;
+    height    : 42.38px;
+    margin-top: -15px;
+    background: url("../img/svglogo.svg") 0 52.77051425725314% no-repeat;
+
+    &:hover {
+      background: url("../img/svglogo.svg") 0 0 no-repeat;
+    }
+  }
+
+  &--footer {
+    width              : 148.3px;
+    height             : 42.88px;
+    margin             : 0 auto;
+    background-position: 99.73100201748488% 0;
+
+    &:hover {
+      background-position: 99.73100201748488% 0;
+    }
+    @media @tablet-widths {
+      margin: -5px 0 0;
+    }
+  }
+}

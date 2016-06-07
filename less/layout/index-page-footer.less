@@ -1,120 +1,144 @@
 .index-page-footer {
-  @media @tablet-widths {
-    & {
-      padding-top: 45px;
-    }
-    &__invite-text-sentence {
-      display: block;
-      // padding-top: 50px;
-    }
-  }
   .index-white-block;
+  .gray-font;
+
   padding-top: 45px;
   padding-bottom: 0;
-  .gray-font;
   text-align: center;
+  @media @tablet-widths {
+    padding-top: 45px;
+  }
+
   &__invite-text {
+    margin: 0 0 35px;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 28px;
     @media @tablet-widths {
-      & {
-        margin-bottom: 45px;
-        font-size: 40px;
-        line-height: 48px;
-      }
+      margin-bottom: 45px;
+      font-size: 40px;
+      line-height: 48px;
+
       &:last-of-type {
         margin-bottom: 35px;
       }
     }
-    margin: 0 0 35px;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: lighter;
   }
-  &__contact-item {
+
+  &__invite-text-sentence {
     @media @tablet-widths {
-      & {
-        display: inline-block;
-        vertical-align: middle;
-        width: 300px;
-        margin-bottom: 45px;
-      }
-    }
-    margin-bottom: 15px;
-    &:last-of-type {
-      margin-bottom: 25px;
+      display: block;
     }
   }
+
+  &__contact-item {
+    margin-bottom: 15px;
+    @media @tablet-widths {
+      display: inline-block;
+      width: 300px;
+      margin-bottom: 45px;
+      vertical-align: middle;
+    }
+
+    &--address {
+      order: 1;
+    }
+
+    &--email {
+      order: 2;
+    }
+
+    &--phone {
+      order: -1;
+    }
+  }
+
+  &__contacts-wrapper {
+    @media @desktop-widths {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
   &__contact-item-title {
     display: block;
-    font-size: 18px;
     font-weight: bold;
+    font-size: 18px;
   }
+
   &__contact-item-content {
-    font-size: 24px;
     font-weight: lighter;
+    font-size: 24px;
     color: #d22856;
   }
-  &__map {
-    @media @tablet-widths {
-      & {
-        height: 378px;
-        }}
+
+  &__map-base {
     position: relative;
+    width: inerit;
     height: 200px;
-    width: 100%;
-    background: url("../img/bg-map.png") 0 bottom no-repeat;
+    background: url("../img/bg-map-mobile.png") 0 bottom no-repeat;
     background-size: cover;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 20;
-      display: block;
-      height: 16px;
-      width: 16px;
-      margin-top: -13px;
-      margin-left: -13px;
-      background-color: #d22856;
-      border: 10px solid white;
-      border-radius: 50%;
+    @media (min-width: 500px) {
+      background-position: 0 -100px;
     }
+    @media @tablet-widths {
+      height: 380px;
+      background: url("../img/bg-map-tablet.png") 0 bottom no-repeat;
+      background-position: 0 bottom;
+      background-size: cover;
+    }
+    @media @desktop-widths {
+      height: 505px;
+      background: url("../img/bg-map-desktop.png") 0 bottom no-repeat;
+      background-position: 0 bottom;
+      background-size: cover;
+    }
+
     &::before {
-      @media @tablet-widths {
-        & {
-          height: 70px;
-          }}
+      content: "";
       position: absolute;
       top: 0;
-      z-index: 20px;
-      content: "";
+      z-index: 20;
       display: block;
-      height: 35px;
       width: 100%;
+      height: 35px;
       background-image: linear-gradient(to top right, transparent 50%, white 50%, ), linear-gradient(to left top, transparent 50%, white 50%);
-      background-size: 50% 100%;
       background-repeat: no-repeat;
       background-position: 0 0, 100% 0;
-    }
-  }
-  &__standart-footer {
-    @media @mobile-widths-only {
-      & {
-        display: none;
+      background-size: 50% 100%;
+      @media @tablet-widths {
+        height: 70px;
       }
     }
-    & {
-      height: 88px;
-      padding-top: 40px;
+  }
+
+  &__map {
+    width: 100%;
+    height: inherit;
+  }
+
+  &__standart-footer {
+    height: 88px;
+    padding-top: 40px;
+    @media @mobile-widths-only {
+      display: none;
     }
-    & .container {
+
+    .container-mobile {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       vertical-align: middle;
-
     }
-& .socal-btn-block {
-  margin: 0;
-}
+
+    .socal-btn-block {
+      margin: 0;
+    }
+  }
+  & .page-footer {
+    display: none;
+    @media @tablet-widths {
+      display: block;
+    }
   }
 }
