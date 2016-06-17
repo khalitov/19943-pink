@@ -14,7 +14,7 @@
   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
   <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="icon-editor-contrast" viewBox="-35.422 -7.96 31.92 31.92">
-      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
       S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
       C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
@@ -267,6 +267,25 @@
       <button type="submit" class="submit-btn">Отправить форму</button>
       <p class="form-section__required-text"><sup>*</sup> — обязательные поля</p>
     </div>
+
+    <div class="form-section__warning-block form-section__warning-block--sucsess">
+      <div class="form-section__warning-explanation">
+        <b class="form-section__warning-title">Ваша заявка отправлена</b>
+        <p class="form-section__warning-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        </div>
+        <div class="form-section__warning-okay-block">
+          <button class="warning-okay-btn">ЗАКРЫТЬ ОКНО</button>
+        </div>
+    </div>
+    <div class="form-section__warning-block form-section__warning-block--fail">
+      <div class="form-section__warning-explanation">
+        <b class="form-section__warning-title">Что-то пошло не так!</b>
+        <p class="form-section__warning-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+        </div>
+        <div class="form-section__warning-okay-block">
+          <button class="warning-okay-btn">ОК</button>
+        </div>
+    </div>
   </form>
 
   <footer class="page-footer page-footer--short-padding">
@@ -298,7 +317,7 @@
     </div>
     </div>
   </footer>
-  <script src="js\script.js"></script>
+  <script src="js\main.js"></script>
 </body>
 
 </html>

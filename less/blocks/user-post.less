@@ -10,18 +10,17 @@
   background: #f2f2f2;
 
   @media @tablet-widths {
-    // box-sizing: border-box;
     width: 300px;
-    // padding-bottom: 50px;
   }
 
   &--best {
-    // box-sizing   : content-box;
     width: 100%;
     padding: 0;
-    background: 0;
+    background: none;
+
     &__user-text {
       margin: 0 20px;
+
       @media @tablet-widths {
         margin: 0 40px;
       }
@@ -31,12 +30,16 @@
   &__img {
     width: 100%;
     height: 180px;
-
+    @media @tablet-widths {
+      height: 300px;
+    }
+    @media @desktop-widths {
+      height: 400px;
+    }
     &--best-today {
       width: 100%;
       height: 137px;
       @media @tablet-widths {
-        // width : 100%;
         height: 511px;
       }
     }
@@ -55,14 +58,6 @@
 
     &--best {
       padding-bottom: 20px;
-      // box-sizing: content-box;
-      // .container-mobile;
-      // @media @tablet-widths {
-      //   flex-direction : row;
-      //   flex-wrap      : wrap;
-      //   justify-content: space-between;
-      //   margin         : 0 40px;
-      // }
     }
   }
 
@@ -83,21 +78,21 @@
   }
 
   &__date {
+    .gray-font;
+
     font-weight: lighter;
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
-
-    .gray-font;
   }
 
   &__content {
+    .gray-font;
+
     width: 100%;
     // margin: 0 0 10px;
     font-size: 14px;
     line-height: 24px;
-
-    .gray-font;
 
     &--best {
       @media @tablet-widths {

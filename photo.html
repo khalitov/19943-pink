@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
@@ -14,7 +15,7 @@
   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
   <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="icon-editor-contrast" viewBox="-35.422 -7.96 31.92 31.92">
-      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
       S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
       C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
@@ -176,9 +177,11 @@
     <article class="user-post user-post--best">
       <div class="user-post__best-img-wrapper">
         <picture>
+          <source media="(min-width:1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width:700px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
           <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Лучшее фото дня" class="user-post__img user-post__img--best-today">
         </picture>
+
       </div>
       <div class="container-mobile">
         <div class="user-post__user-text user-post__user-text--best">
@@ -202,7 +205,12 @@
     </article>
     <div class="container-mobile">
       <article class="user-post">
-        <img src="img/photo-1-mobile.jpg" alt="" class="user-post__img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width:700px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+          <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="" class="user-post__img">
+        </picture>
+
         <div class="user-post__user-text">
           <b class="user-post__user-name">Левон </b>
           <span class="user-post__date">(5 часов назад)</span>
@@ -220,7 +228,11 @@
 
       </article>
       <article class="user-post">
-        <img src="img/photo-2-mobile.jpg" alt="" class="user-post__img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width:700px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+          <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="" class="user-post__img">
+        </picture>
         <div class="user-post__user-text">
           <b class="user-post__user-name">Антон</b>
           <span class="user-post__date">(12 часов назад)</span>
@@ -237,7 +249,11 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/photo-3-mobile.jpg" alt="" class="user-post__img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+          <source media="(min-width:700px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+          <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="" class="user-post__img">
+        </picture>
         <div class="user-post__user-text">
           <b class="user-post__user-name">Борис</b>
           <span class="user-post__date">(20 часов назад)</span>
@@ -254,7 +270,11 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/photo-4-mobile.jpg" alt="" class="user-post__img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+          <source media="(min-width:700px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+          <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="" class="user-post__img">
+        </picture>
         <div class="user-post__user-text">
           <b class="user-post__user-name">Сергей</b>
           <span class="user-post__date">(25 часов назад)</span>
@@ -271,7 +291,11 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/photo-5-mobile.jpg" alt="" class="user-post__img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+          <source media="(min-width:700px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+          <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="" class="user-post__img">
+        </picture>
         <div class="user-post__user-text">
           <b class="user-post__user-name">Максим</b>
           <span class="user-post__date">(40 часов назад)</span>
@@ -288,7 +312,11 @@
         </div>
       </article>
       <article class="user-post">
-        <img src="img/photo-6-mobile.jpg" alt="" class="user-post__img">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+          <source media="(min-width:700px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+          <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="" class="user-post__img">
+        </picture>
         <div class="user-post__user-text">
           <b class="user-post__user-name">Надежда</b>
           <span class="user-post__date">(45 часов назад)</span>
@@ -316,7 +344,6 @@
       </p>
     </div>
   </div>
-
   <form action="" class="photo-upload-block">
     <div class="container-tablet">
       <img src="../img/photo-7-mobile.jpg" alt="" class="photo-upload-block__uploaded-pic">
@@ -361,6 +388,7 @@
       </div>
     </div>
   </form>
+
   <footer class="page-footer page-footer--short-padding">
     <div class="container-mobile">
 
@@ -390,7 +418,8 @@
     </div>
     </div>
   </footer>
-  <script src="js\script.js"></script>
+
+  <script src="js\main.js"></script>
 </body>
 
 </html>
