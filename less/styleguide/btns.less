@@ -1,4 +1,6 @@
 .btn {
+  .white-font;
+
   display: block;
   width: 274px;
   margin-bottom: 30px;
@@ -7,13 +9,11 @@
   line-height: 49px;
   vertical-align: middle;
   text-align: center;
-  color: white;
   text-decoration: none;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
   border-radius: 24px;
   cursor: pointer;
 
-  .white-font;
 
   &--red {
     color: #d22856;
@@ -227,9 +227,13 @@
 }
 
 .slider-toggle {
-  margin: 0;
+  width: 90px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  @media @desktop-widths {
+    display: none;
+  }
 
   &__toggle-item {
     display: inline-block;
@@ -251,5 +255,62 @@
     background-color: transparent;
     border: 3px solid #283645;
     cursor: auto;
+  }
+}
+.switch-btn {
+  content: "";
+  position: absolute;
+  top: 200px;
+  right: 50%;
+  z-index: 1000;
+  display: none;
+  width: 40px;
+  height: 60px;
+  margin-right: -550px;
+  cursor: pointer;
+
+  @media @desktop-widths {
+    display: block;
+  }
+  &:hover > div {
+    border-color: #d22856;
+  }
+  &--previous {
+    margin-right: 510px;
+  }
+  &__pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-right: 2px solid #bec2c7;
+    border-bottom: 2px solid #bec2c7;
+    transform: rotate(-45deg);
+  }
+  &__pointer--left {
+    transform: rotate(135deg);
+  }
+}
+.warning-okay-btn {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 17px 12px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+
+  @media @tablet-widths {
+    margin-bottom: 0;
   }
 }

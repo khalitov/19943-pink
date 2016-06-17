@@ -12,6 +12,7 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var svgsprite = require('gulp-svg-sprite');
+var webpack = require('gulp-webpack');
 
 
 gulp.task("style", function() {
@@ -38,10 +39,14 @@ gulp.task('html', function() {
 });
 
 
+
 gulp.task('js', function() {
-  gulp.src('js/*.js')
+  return gulp.src('js/main.js')
+    .pipe(webpack())
+    .pipe(rename('main.js'))
     .pipe(gulp.dest('build/js/'));
 });
+
 
 gulp.task('images', function() {
   gulp.src('img/**/*.{jpg,png,gif}', {
@@ -58,17 +63,7 @@ gulp.task('images', function() {
 gulp.task('svgicons', function() {
   gulp.src('img/svg-icons/*.svg')
     .pipe(svgstore())
-
-  // .pipe(svgsprite({
-  //   mode: {
-  //     view: { // Activate the «view» mode
-  //       bust: true
-  //     }
-  //   },
-  //   symbol: true
-  // }))
-
-  .pipe(rename('svgicons.svg'))
+    .pipe(rename('svgicons.svg'))
     .pipe(gulp.dest('img/'));
 });
 
@@ -101,12 +96,13 @@ gulp.task('svgcopy', function() {
     .pipe(gulp.dest('img/'));
 });
 
+
 gulp.task('del', function() {
   del('build/*');
 })
 
-gulp.task("build", ['del', 'html', 'style', 'js', 'images', 'svglogo', 'svgcopy'], function() {
-  gulp.src(['fonts/**/*.{woff,woff2}', 'js/**/*.js'], {
+gulp.task("build", ['del', 'html', 'style', 'js', 'images', 'svgcopy'], function() {
+  gulp.src(['fonts/**/*.{woff,woff2}'], {
       base: '.'
     })
     .pipe(gulp.dest('build'));

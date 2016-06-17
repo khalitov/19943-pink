@@ -1,0 +1,21 @@
+{
+  "name": "bower",
+  "description": "Личный проект «Пинк» от HTML Academy",
+  "main": "",
+  "authors": [
+    "Наиль Халитов"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/khalitov/19943-pink",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "jQuery-ui-Slider-Pips": "jquery-ui-slider-pips#^1.11.3"
+  }
+}

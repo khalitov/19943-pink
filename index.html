@@ -14,7 +14,7 @@
   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
   <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="icon-editor-contrast" viewBox="-35.422 -7.96 31.92 31.92">
-      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
     	S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
     	C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
@@ -231,26 +231,43 @@
   </div>
 
   <div class="mention-section">
-    <div class="container-mobile">
-      <div class="mention-block">
-        <b class="mention-block__user-name">Николай Петров</b>
-        <i class="mention-block__user-info">25 лет, водитель трамвая</i>
-        <p class="mention-block__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </p>
-      </div>
-      <div class="mention-block">
-        <b class="mention-block__user-name">Николай Петров-2</b>
-        <i class="mention-block__user-info">25 лет, водитель трамвая</i>
-        <p class="mention-block__user-text">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </p>
-      </div>
-      <div class="mention-block">
-        <b class="mention-block__user-name">Николай Петров-3</b>
-        <i class="mention-block__user-info">25 лет, водитель трамвая</i>
-        <p class="mention-block__user-text">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </p>
+    <svg class='mention-section__sign'>
+      <use xlink:href="#icon-quotes"></use>
+    </svg>
+    <div class="switch-btn switch-btn--previous">
+      <div class="switch-btn__pointer switch-btn__pointer--left"></div>
+    </div>
+    <div class="switch-btn switch-btn--next">
+      <div class="switch-btn__pointer switch-btn__pointer--right"></div>
+    </div>
+    <div class="overflow-wrapper">
+      <div class="mention-section__mentions-wrapper">
+        <div class="mention-block">
+          <div class="container-mobile">
+            <b class="mention-block__user-name">Николай Петров</b>
+            <i class="mention-block__user-info">25 лет, водитель трамвая</i>
+            <p class="mention-block__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
+        </div>
+        <div class="mention-block">
+          <div class="container-mobile">
+            <b class="mention-block__user-name">Иван Иванов</b>
+            <i class="mention-block__user-info">20 лет, инженер</i>
+            <p class="mention-block__user-text">
+              «Не приложение, я огонь!»
+            </p>
+          </div>
+        </div>
+        <div class="mention-block">
+          <div class="container-mobile">
+            <b class="mention-block__user-name">Петр Вагонов</b>
+            <i class="mention-block__user-info">25 лет, переводчик</i>
+            <p class="mention-block__user-text">
+              «Надоел инстаграмм? Тогда вам сюда) Напоминает проект из фильма "Кадры" - моментограмм»
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <ul class="slider-toggle">
@@ -383,7 +400,7 @@
     </div>
     </div>
   </footer>
-  <!-- <script src="js\script.js"></script> -->
+  <script src="js\main.js"></script>
 </body>
 
 </html>
