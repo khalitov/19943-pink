@@ -3,3 +3,4 @@
 
 //selfwritten scripts
 require('./menu-hider.js');
+require('./slider.js');
