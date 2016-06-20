@@ -6,22 +6,20 @@
   justify-content: center;
   align-items: center;
   width: 280px;
-  margin: 0 auto;
-  margin-top: 40px;
-  padding: 0 20px;
-  padding-bottom: 75px;
+  margin: 40px auto 0;
+  padding: 0 20px 75px;
   border-bottom: 1px solid #dddfe0;
   @media @tablet-widths {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0;
     padding: 0 10px;
-    // padding-bottom: 75px;
     border-bottom: none;
   }
   @media @desktop-widths {
     width: 390px;
   }
+
   &__edit-unit {
     @media @tablet-widths {
       position: relative;
@@ -31,10 +29,12 @@
       height: 70px;
       border-bottom: 1px solid #dddfe0;
     }
+
     &:first-of-type {
       height: 55px;
     }
   }
+
   &__edit-icons {
     @media @tablet-widths {
       display: flex;
@@ -42,11 +42,13 @@
       align-items: flex-start;
     }
   }
+
   &__edit-instruments {
     @media @tablet-widths {
       width: 280px;
     }
   }
+
   & .container-mobile {
     display: flex;
     flex-direction: row;

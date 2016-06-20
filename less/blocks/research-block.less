@@ -3,14 +3,12 @@
   margin-bottom: 30px;
   padding: 60px 0;
   text-align: left;
-
   @media @mobile-widths-only {
     display: none;
   }
-
   @media @desktop-widths {
     margin-top: 0;
-      margin-bottom: 0;
+    margin-bottom: 0;
     padding-top: 118px;
     padding-bottom: 115px;
     background-color: #f2f2f2;
@@ -24,15 +22,14 @@
     line-height: 36px;
 
     &::before {
+      content: "";
       position: absolute;
       top: -45px;
       left: -310px;
-      content: "";
       display: block;
       width: 240px;
       height: 280px;
       background: url("../img/timer.png") center 50% no-repeat;
-
       @media @desktop-widths {
         top: -90px;
         left: 0;
@@ -48,10 +45,9 @@
 
   &__descr {
     margin-bottom: 6px;
-    color: #283645;
     font-size: 14px;
     line-height: 24px;
-
+    color: #283645;
     @media @desktop-widths {
       margin-bottom: 31px;
       font-size: 18px;
@@ -60,10 +56,9 @@
   }
 
   &__details-link {
-    color: #d22856;
     font-size: 14px;
     line-height: 24px;
-
+    color: #d22856;
     @media @desktop-widths {
       font-size: 18px;
       line-height: 30px;
@@ -71,10 +66,9 @@
   }
 
   .container-mobile > * {
-    width: 310px;
     float: right;
     clear: right;
-
+    width: 310px;
     @media @desktop-widths {
       float: left;
       clear: left;

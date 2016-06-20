@@ -4,7 +4,6 @@ body {
   position: relative;
   min-width: 320px;
   margin: 0 auto;
-  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
 }
@@ -12,35 +11,41 @@ body {
 p {
   margin: 0;
 }
+
 button {
   background-color: transparent;
+
   &:active,
   &:focus {
     outline: none;
   }
 }
+
 picture {
   width: inherit;
 }
+
 a:active,
 a:focus {
   outline: none;
 }
+
 .overflow-wrapper {
   overflow: hidden;
 }
+
 .container-mobile {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
   @media @tablet-widths {
     width: 620px;
-    padding: 0 40px;
+    padding: 0 30px;
   }
   @media @desktop-widths {
     position: relative;
     width: 940px;
-    padding: 0 130px;
+    padding: 0 100px;
   }
 }
 
@@ -48,12 +53,12 @@ a:focus {
   @media @tablet-widths {
     width: 620px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 30px;
   }
   @media @desktop-widths {
     width: 940px;
     margin: 0 auto;
-    padding: 0 130px;
+    // padding: 0 130px;
   }
 }
 
@@ -61,6 +66,6 @@ a:focus {
   @media @desktop-widths {
     width: 940px;
     margin: 0 auto;
-    padding: 0 130px;
+    // padding: 0 130px;
   }
 }

@@ -1,46 +1,45 @@
 @font-face {
-  font-family: "Open Sans";
-  /*local("Open Sans"), local("Open Sans Regular"),*/
-  // font-style: normal;
-  src: url("fonts/opensans.woff") format('woff'), url("../fonts/opensans.woff2") format('woff2');
   font-weight: normal;
-}
-
-@font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff") format('woff'), url("fonts/opensanslight.woff2") format('woff2');
+
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+}
+@font-face {
   font-weight: lighter;
-}
-
-@font-face {
   font-family: "Open Sans";
-  /*local("OpenSans Bold"), local("Open Sans Bold"),*/
-  // font-style: normal;
-  src: url("fonts/opensansbold.woff") format('woff'), url("../fonts/opensansbold.woff2") format('woff2');
+
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+}
+@font-face {
   font-weight: bold;
+  font-family: "Open Sans";
+
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
 }
 
 .main-font() {
-  color: #000000;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
   font-style: normal;
 }
 
 .white-font() {
   .main-font;
+
   color: #ffffff;
 }
 
 .gray-font() {
   .main-font;
+
   color: @gray-text-color;
 }
 
 .h1-title-font() {
-  font-size: 24px;
   font-weight: lighter;
-  text-align: center;
+  font-size: 24px;
   line-height: 28px;
+  text-align: center;
   color: #ffffff;
 }
