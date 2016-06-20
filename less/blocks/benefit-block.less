@@ -6,6 +6,17 @@
   padding-top: 50px;
   padding-bottom: 290px;
   text-align: center;
+  @media @tablet-widths {
+    padding-top: 20px;
+    padding-bottom: 0;
+
+    .container-mobile {
+      position: relative;
+    }
+  }
+  @media @desktop-widths {
+    padding-top: 260px;
+  }
 
   &::before {
     content: "";
@@ -25,50 +36,6 @@
       top: -95px;
       height: 95px;
     }
-  }
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: 0;
-  //   display: block;
-  //   width: 100%;
-  //   height: 280px;
-  //   background: url("../img/iphone-screen-mobile.png") center 0 no-repeat;
-  //   background-size: 157px auto;
-  //   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  //     background: url("../img/iphone-screen-mobile@2x.png") center 0 no-repeat;
-  //     background-size: 157px auto;
-  //   }
-  //   @media @tablet-widths {
-  //     display: none;
-  //   }
-  // }
-  @media @tablet-widths {
-    padding-top: 20px;
-    padding-bottom: 0;
-
-    .container-mobile {
-      position: relative;
-      //
-      // &::before {
-      //   content: "";
-      //   position: absolute;
-      //   bottom: 0;
-      //   left: 35px;
-      //   z-index: 50px;
-      //   display: block;
-      //   width: 275px;
-      //   height: 480px;
-      //   background: url("../img/iphone-screen-mobile.png") 0 0 no-repeat;
-      //   background-size: cover;
-      //   @media @desktop-widths {
-      //     display: none;
-      //   }
-      // }
-    }
-  }
-  @media @desktop-widths {
-    padding-top: 260px;
   }
 
   &__benefit-item {

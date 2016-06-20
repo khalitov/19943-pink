@@ -8,7 +8,6 @@
   padding-bottom: 40px;
   font-size: 0;
   background: #f2f2f2;
-
   @media @tablet-widths {
     width: 300px;
   }
@@ -17,10 +16,11 @@
     width: 100%;
     padding: 0;
     background: none;
-
+    @media @tablet-widths {
+      width: 100%;
+    }
     &__user-text {
       margin: 0 20px;
-
       @media @tablet-widths {
         margin: 0 40px;
       }
@@ -36,6 +36,7 @@
     @media @desktop-widths {
       height: 400px;
     }
+
     &--best-today {
       width: 100%;
       height: 137px;
@@ -90,7 +91,6 @@
     .gray-font;
 
     width: 100%;
-    // margin: 0 0 10px;
     font-size: 14px;
     line-height: 24px;
 
@@ -105,9 +105,9 @@
     position: relative;
     width: 100%;
 
-    & picture {
-      height: 0;
-    }
+    // picture {
+    //   height: 0;
+    // }
   }
 
   &__best-img-wrapper::after {
@@ -124,7 +124,7 @@
     font-size: 12px;
     line-height: 24px;
     text-align: center;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     background-color: #d22856;
     @media @tablet-widths {

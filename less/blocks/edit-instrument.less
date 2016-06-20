@@ -5,8 +5,6 @@
   display: none;
   width: 280px;
   height: 45px;
-
-
   @media @tablet-widths {
     top: 50%;
     right: 0;
@@ -24,21 +22,20 @@
     display: block;
   }
 
-
   &__line {
     position: absolute;
     top: 50%;
     left: 0;
     z-index: 5;
     width: 100%;
-    // margin-bottom: 35px;
     height: 2px;
-    background-color: black;
+    background-color: #000000;
     cursor: pointer;
 
     &--active {
       display: block;
     }
+
     &-slider {
       position: absolute;
       left: 80%;
@@ -47,7 +44,7 @@
       width: 10px;
       height: 10px;
       margin-top: -6px;
-      background: white;
+      background: #ffffff;
       border: 2px solid #d22856;
       border-radius: 50%;
       cursor: pointer;

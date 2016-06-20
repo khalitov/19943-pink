@@ -14,7 +14,6 @@
   border-radius: 24px;
   cursor: pointer;
 
-
   &--red {
     color: #d22856;
     border-color: #d22856;
@@ -257,6 +256,7 @@
     cursor: auto;
   }
 }
+
 .switch-btn {
   content: "";
   position: absolute;
@@ -268,16 +268,18 @@
   height: 60px;
   margin-right: -550px;
   cursor: pointer;
-
   @media @desktop-widths {
     display: block;
   }
+
   &:hover > div {
     border-color: #d22856;
   }
+
   &--previous {
     margin-right: 510px;
   }
+
   &__pointer {
     position: absolute;
     top: 50%;
@@ -291,15 +293,16 @@
     border-bottom: 2px solid #bec2c7;
     transform: rotate(-45deg);
   }
+
   &__pointer--left {
     transform: rotate(135deg);
   }
 }
+
 .warning-okay-btn {
   display: block;
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
   padding: 17px 12px;
   font-weight: bold;
   font-size: 18px;
@@ -309,7 +312,6 @@
   background-color: #2aab6d;
   border: none;
   border-radius: 2px;
-
   @media @tablet-widths {
     margin-bottom: 0;
   }
